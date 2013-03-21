@@ -1,0 +1,2298 @@
+/* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+/**For common elements non-mobile layouts body.html  IBR**/
+
+/*Indice
+
+Elementos comunes
+Recuperando bloques
+Ocultando bloques
+Home
+ cabecera
+ menu principal
+ ddblock home
+ twitter home
+ pie
+ menu pie
+Views 4 elementos
+*/
+
+
+.hidden {
+ display:none;
+}
+@font-face {
+    font-family:'bebas';
+    src: url('../fonts/BebasNeue-webfont.eot');
+    src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeue-webfont.woff') format('woff'),
+         url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('../fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.alpha-resize-indicator {
+ display:none;
+}
+/***Intentando definir cajas**/
+/**Columna central**/
+.container-12 {
+ width:82%;
+}
+/**Cabecera**/
+.zone-branding-wrapper #zone-branding {
+ width:100%;
+ background-color:#CC3333;
+}
+/*Textos*/
+body {
+  font: 13px/1.5 Georgia, Helvetica, Arial;
+}
+a,
+a:link,
+a:visited,
+a:hover {
+  color: #CC3333;
+  text-decoration:none;
+  font-weight:bold;
+}
+hr {
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 1px;
+  background: #5294c1;
+}
+h1, h2 {
+/*  letter-spacing: -0.05em;*/
+  font-family: 'Bebas', 'Arial', serif;
+  letter-spacing:none;
+}
+body.html h1,
+body.html h2,
+body.html h3,
+body.html h4,
+body.html h5,
+body.html h6 {
+ letter-spacing:normal;
+}
+h3, h4, h5, h6 {
+/* letter-spacing: -0.05em;*/
+  font-family: 'Arial', serif;
+  letter-spacing:none;
+}
+.field-name-title h2,
+.slide-title h2 {
+ font-weight:normal;
+ letter-spacing: 0em;
+ font-size:50px;
+}
+
+
+/*****************************************************************************************/
+
+/*Recuperando bloques*/
+
+body.responsive-layout-fluid #block-views-home-block-1,
+body.responsive-layout-fluid #block-views-home-block-2,
+body.responsive-layout-fluid #block-views-home-block-3,
+body.responsive-layout-fluid #block-views-imag-nes-cabecera-block,
+body.responsive-layout-fluid #block-delta-blocks-site-name h1, 
+body.responsive-layout-fluid #block-delta-blocks-site-name h2, 
+body.responsive-layout-fluid #block-delta-blocks-site-name a,
+body.responsive-layout-fluid #block-block-4,
+body.html #block-views-tweets-block-1,
+body.html #block-views-enlaces-block img, 
+body.html #block-views-enlaces-block-1 img,
+body.html #block-views-galeria-video-block, 
+body.html #block-views-galeria-video-block-1,
+body.html #block-views-galeria-de-fotos-block-1,
+body.html #block-views-revista-block, 
+body.html #block-views-revista-block-2,
+body.html.responsive-layout-fluid .field.field-name-tweets.field-type-ds.field-label-hidden,
+body.html.responsive-layout-fluid  #block-search-form {
+ display:block;
+ visibility:visible;
+}
+
+body.html #block-views-tweets-block-1 {
+ width:inherit;
+}
+
+/*Eliminando bloques Móviles*/
+body.responsive-layout-fluid #block-views-cabeceramoviles-block,
+body.responsive-layout-fluid #block-views-home-block-5,
+body.responsive-layout-fluid #block-views-home-block-6,
+body.responsive-layout-fluid #block-views-home-block-7,
+body.responsive-layout-fluid #block-block-27,
+body.responsive-layout-fluid #block-block-28,
+body.responsive-layout-fluid #block-views-galeria-video-block-2,
+body.html #block-views-galeria-de-fotos-block-3,
+body.html #block-views-revista-block-1 {
+ display:none;
+}
+/*************************************************HOME*********************************************************/
+
+/*HOME*/
+body.front #block-system-main,
+body.page-node nav.navigation {
+ display:none;
+}
+
+/*********************Cabecera*/
+#region-user-first {
+ float:left;
+ width:50%;
+ margin-left:0px;
+ padding-left:0px;
+ margin-right:0px;
+}
+#block-views-imag-nes-cabecera-block {
+ width:100%;
+ float:left;
+}
+
+body.html #block-views-imag-nes-cabecera-block img.adaptive-image {
+ margin-bottom:0px;
+ padding-bottom:0px;
+ min-height:100px;
+}
+
+#zone-branding-wrapper {
+ background-image:url('../images/degradado.png');
+}
+#zone-branding-wrapper,
+#region-branding,
+#region-user-second {
+ background-color:#CC3333;
+ color:white;
+ min-height:100px;
+ margin-right:0px;
+}
+#region-user-second {
+ margin-left:0px;
+}
+#region-branding a {
+ color:white;
+}
+#block-delta-blocks-site-name {
+ float: right;
+ margin-top:2%;
+ position: absolute;
+ z-index: 9; /* quiron modifyed */
+ width:98%;
+ text-align:right;
+}
+
+#region-branding {
+ margin-left:0px;
+ padding-left:0px;
+ max-height:100px;
+ z-index:9; /* quiron modifyed */
+ width:50%;
+ float:left;
+/* max-width: 650px; IBR responsive */
+}
+#region-branding .branding-data {
+ width:auto;
+ float:left;
+}
+#region-branding .branding-data {
+ font-family:'Georgia';
+ font-size:15px;
+ margin-left:1%;
+ padding-top:2%;
+ width:80%;
+ overflow:hidden;
+}
+#region-branding .branding-data h6 {
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: normal;
+ }
+
+body.responsive-layout-fluid #region-branding .branding-data h6 {
+ font-size:20px;
+ margin-top:0px;
+ margin-left:0px;
+}
+
+#region-branding .site-name-slogan {
+ margin-top:20px;
+}
+
+body.responsive-layout-fluid #region-branding .site-name-slogan {
+ margin-top:6%;
+}
+#block-delta-blocks-site-slogan {
+ display:none;
+}
+#block-block-1 {
+ padding-top:50px; /*7%;*/
+ width:18%;
+ float:right;
+}
+#block-block-1 p {
+ margin-bottom:0px;
+ margin-top:25px;
+ font-family:'Bebas';
+ text-transform:uppercase;
+ font-size:15px;
+}
+#block-block-1 #fb {
+ float:left;
+ padding-right:10px;
+ padding-bottom:10px;
+}
+
+body.responsive-layout-fluid #block-block-1 #fb {
+ padding-left:5px;
+ padding-right:0px;
+}
+
+#fb a img,
+#tw a img {
+ width:100%;
+}
+body.responsive-layout-fluid  #region-user-first {
+ height:100px;
+}
+
+body.responsive-layout-fluid #block-delta-blocks-site-name h1,
+body.responsive-layout-fluid #block-delta-blocks-site-name h2,
+body.responsive-layout-fluid #block-delta-blocks-site-name a {
+ font-family:'Helvetica';
+ color:white;
+ font-size:2.5em;
+ padding-right:0%;
+ margin-right:0px;
+ padding-top:3%;
+}
+
+
+body.responsive-layout-fluid .site-name-slogan #subt {
+ font-size:1em;
+ line-height:1em;
+ padding-top:0.5em;
+}
+
+body.html #subt {
+ margin-left:0px;
+ font-size:1em;
+}
+
+/************Menú************************************/
+
+
+body.responsive-layout-fluid #block-nice-menus-1 ul li ul,
+body.responsive-layout-fluid #block-nice-menus-2 ul li ul {
+ width:100%;
+ padding-left:0px;
+}
+
+
+body.html #block-nice-menus-1 ul li ul li,
+body.html #block-nice-menus-2 ul li ul li {
+ width:100%;
+}
+
+body.responsive-layout-fluid #block-nice-menus-1 ul.nice-menu-down li ul  , 
+body.responsive-layout-fluid #block-nice-menus-2 ul.nice-menu-down li ul  {
+ z-index:9999999;
+ margin-bottom:10px;
+ width:100%;
+ margin-left:0px;
+ padding-left:10px;
+} 
+
+body.responsive-layout-fluid #block-nice-menus-1 ul.nice-menu-down li ul * , 
+body.responsive-layout-fluid #block-nice-menus-2 ul.nice-menu-down li ul * {
+  z-index:9999999;
+}
+
+body.responsive-layout-fluid #block-nice-menus-1 ul li ul li.last a,
+body.responsive-layout-fluid #block-nice-menus-2 ul li ul li.last a {
+ margin-left:-5px;
+}
+
+body.responsive-layout-fluid #block-nice-menus-1 ul li ul li a,
+body.responsive-layout-fluid #block-nice-menus-2 ul li ul li a {
+ width:100%;
+}
+
+body.html #block-nice-menus-1 ul li ul li a,
+body.html #block-nice-menus-2 ul li ul li a {
+ width:auto;
+}
+
+body.html.responsive-layout-fluid ul#nice-menu-2 li.menuparent {
+ width:100%;
+}
+
+body.html #block-nice-menus-2 * {
+ background-color:#928475;
+ margin-left:0px;
+ margin-bottom:2px;
+}
+
+/*****************************DDBLOCK HOME**/
+
+body.responsive-layout-fluid #region-header-first,
+body.responsive-layout-fluid .ddblock-cycle-custom50p,
+body.responsive-layout-fluid .ddblock-cycle-custom50p .custom-pager {
+ display:block;
+ visibility:visible;
+}
+
+body.responsive-layout-fluid #ddblock-custom-pager-5 {
+ width:12%;
+}
+
+body.html.front div.ddblock-cycle-custom50p div.container-inner {
+ padding-top:0px;
+}
+
+body.html.front div.ddblock-cycle-custom50p div.slider {
+ margin-top:-20px;
+}
+
+body.html.front div.ddblock-cycle-custom50p div.slider {
+ margin-right:-10px;
+}
+
+body.responsive-layout-fluid.front div.ddblock-cycle-custom50p div.slide-text-inner {
+ margin-left:0px;
+}
+
+body.responsive-layout-fluid.front div.ddblock-cycle-custom50p div.slide-title a {
+ padding-left:0px;
+}
+
+body.responsive-layout-fluid.front div.ddblock-cycle-custom50p div.slide-title h2 {
+ border-left:solid #393737 10px;
+}
+
+
+/******************************************Bloques Portada*/
+
+/*Bloques de Texto*/
+
+body.responsive-layout-fluid #region-preface-first,
+body.responsive-layout-fluid #region-preface-second, 
+body.responsive-layout-fluid #region-preface-third {
+ width:54%;
+ float:left;
+ clear:none;
+}
+
+body.responsive-layout-fluid #region-preface-second, 
+body.responsive-layout-fluid #region-preface-third {
+ margin-left:10px;
+}
+
+body.responsive-layout-fluid.front #cos {
+ min-height:auto;
+ max-height:auto;
+}
+
+/******************Twitter HOME*/
+
+body.responsive-layout-fluid #region-sidebar-second {
+ width:42%;
+ float:right;
+ clear:right;
+ margin-top:-34em;
+ }
+
+body.responsive-layout-fluid.front #block-views-tweets-block-1 {
+ display:block;
+ width:100%;
+}
+
+
+body.html.front #block-views-tweets-block-1 *,
+body.html.front #block-views-tweets-block-1 table,
+body.html  #block-views-tweets-block-1 *,
+body.html  #block-views-tweets-block * {
+ background-color:#CC3333;
+ padding-right:3px;
+ vertical-align:top;
+ margin-left:0px;
+ margin-right:-2px;
+}
+body.html #block-views-tweets-block-1 .view-id-tweets td.views-field img,
+body.html #block-views-tweets-block .view-id-tweets td.views-field img {
+ vertical-align:top;
+}
+body.html #block-views-tweets-block-1 table,
+body.html #block-views-tweets-block-1 tr,
+body.html #block-views-tweets-block table,
+body.html #block-views-tweets-block tr {
+ border:none;
+ /*margin-left:5px;
+ margin-right:5px;*/
+}
+body.html #block-views-tweets-block-1 td.views-field-text,
+body.html #block-views-tweets-block td.views-field-text {
+ border-bottom: solid 1px white;
+ padding-top:10px;
+ padding-bottom:10px;
+
+}
+
+body.html #block-views-tweets-block-1 tr.views-row-last,
+body.html #block-views-tweets-block tr.views-row-last {
+ border-bottom: solid #CC3333 2px;
+}
+body.html #block-views-tweets-block-1 .view-header,
+body.html #block-views-tweets-block .view-header {
+ text-align:center;
+ padding-bottom:10px;
+ padding-top:10px;
+}
+.field-name-3twits {
+ margin-left:-5px;
+ clear:left;
+}
+
+body.responsive-layout-fluid.node-type-contenidos .field-name-3twits {
+ margin-left:-15px;
+}
+
+.block-aggregator a,
+#block-views-tweets-block-1 a,
+#block-views-tweets-block a,
+.view view-tweets a {
+ color:white;
+}
+body.html #block-views-tweets-block-1 table .views-field-text *,
+body.html #block-views-tweets-block table .views-field-text * {
+ width:inherit;
+}
+
+body.html #block-views-tweets-block-1 table.views-table tbody,
+body.html #block-views-tweets-block table.views-table tbody {
+ width:inherit;
+}
+
+
+/****************************************Pie*/
+
+#region-content {
+ padding-bottom:10px;
+}
+
+#region-footer-first,
+#region-footer-second {
+  margin-left:0px;
+  width:100%;
+  /*z-index: -1; afegit per tema responsive però llavors no es veu el peu!!*/
+}
+#region-footer-first {
+  background-color:#1e1e1e;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-size:16px;
+}
+
+body.not-front #region-footer-first {
+ margin-top:0px;
+}
+
+
+#region-footer-first p {
+  margin-bottom:0px;
+}
+footer#section-footer #zone-footer #block-block-2 span,
+footer#section-footer #zone-footer #block-block-3  {
+ background-color:#1e1e1e;
+ font-family:'Bebas';
+ color:white;
+ font-size:16px;
+}
+
+body.html #section-footer {
+ clear: both;
+ float:none; 
+}
+/*Licencias*/
+#block-block-2,
+#block-block-3,
+#block-block-4 {
+ width:50%;
+ float:left;
+ border-top:none;
+ border-bottom:none;
+
+}
+#block-block-2 div,
+#block-block-3 div {
+ font-size:20px;
+}
+#block-block-2 img,
+#block-block-3 img {
+ width:20%;
+ float:left;
+ margin-right:20px;
+ margin-left:10px;
+}
+#block-block-4 { 
+ text-align:center;
+ background-color:#1E1E1E;
+ color:white;
+ font-family:'Bebas';
+}
+#block-block-3 p,
+#block-block-4 p {
+ margin-bottom:0px;
+ font-family:'Bebas';
+ padding-top:4px;
+}
+#block-block-4 a {
+ color:#CC3333;
+}
+body.responsive-layout-fluid #block-block-4 p {
+ text-align:left;
+ padding-left:1em;
+}
+
+/***Menu Pie***/
+
+body.html #block-menu-menu-menupie,
+#block-menu-menu-menupie a {
+ background-color:#CC3333;
+ color:white;
+ font-family:'Bebas';
+ font-weight:normal;
+ text-align:left;
+ font-size:20px;
+}
+body.html #block-menu-menu-menupie ul li.leaf {
+ list-style-type:none;
+ list-style-image:none;
+ float:left;
+ width:auto;
+}
+
+/******VIEWS BLOQUES DE 4 ELEMENTOS o PLANTILLAS*****************************/
+
+/*Franjas*/
+
+
+
+body.html.front #zone-header-wrapper {
+  margin-top: 45px;
+  max-height: 370px;
+  
+}
+
+body.html.front #region-header-first {
+ margin-top:-45px;
+ border-top: solid 45px #E5E5E5;
+ margin-left:-10px;
+ width:100%;
+ padding-right:10px;
+ z-index:0;
+}
+
+body.responsive-layout-fluid.front #region-header-first {
+ width:100%;
+}
+
+/*Franjas color de fondo*/
+
+
+body.html.not-front.page-node- .zone-content-wrapper,
+body.html.not-front.page-documentacion .zone-content-wrapper {
+ border-top:12px solid white;
+ max-height:50px;
+ background-color:#202020;
+ display:block; /*mirar qué sucede con esto referente al pie volador*/
+}
+body.html.not-front.page-node-.logged-in .zone-content-wrapper,
+body.html.not-front.page-documentacion.logged-in .zone-content-wrapper {
+ max-height:51px;
+}
+
+
+
+body.html.not-front.node-type-video .zone-content-wrapper,
+body.html.not-front.node-type-galeria-imagenes .zone-content-wrapper,
+body.html.not-front.node-type-contenidos .zone-content-wrapper,
+body.html.not-front.node-type-actas .zone-content-wrapper {
+ background-color:#202020;
+ max-height:315px;
+ border-top: solid #FFFFFF 30px /*50px*/;
+}
+body.html.page-node .zone-header,
+body.html.not-front #zone-header {
+ background-color:#e5e5e5;
+ padding-bottom:35px;
+}
+body.html.page-node- #zone-footer {
+ background-color:#e5e5e5;
+ width:100%;
+}
+
+body.html #block-menu-menu-menupie ul li.leaf {
+ border-bottom:none;
+}
+
+body.html #block-system-main .ds-3col-stacked {
+ background-color: #E5E5E5;
+}
+
+/*Plantillas*/
+
+/*body.html.page-documentacion .zone-content-wrapper,
+body.html.page-convenios-colectivos .zone-content-wrapper,
+body.html.page-multimedia .zone-content-wrapper {
+ background-color:#202020;
+ height:50px;
+ margin-top:0;
+ border-top: solid 12px white;
+}*/
+
+/*body.html.node-type-plantilla-coorburgos #zone-content,
+body.html.node-type-plantilla-fedast #zone-content,
+body.html.node-type-plantilla-contratas #zone-content,
+body.html.node-type-plantilla-enlaces #zone-content,
+body.html.node-type-pformacion,
+body.html.node-type-plantilla-enlacesint,
+body.html.page-multimedia  #zone-content,
+body.html.node-type-plantillan-telef #zone-content,
+body.html.node-type-plantillac #zone-content,
+body.html.node-type-provincias #zone-content,
+body.html.node-type-pagina #zone-content,
+body.html.node-type-paginab #zone-content,
+body.html.node-type-normativa #zone-content,
+body.html.node-type-multimediap #zone-content,
+body.html.page-convenios-colectivos  #zone-content,
+body.html.node-type-opinion #zone-content
+body.html.page-documentacion #zone-content,*/
+
+
+body.html.not-front #zone-content {
+ margin-top:-24px;
+ padding-top:12px;
+}
+
+body.html.node-type-actas #zone-content,
+body.html.node-type-video #zone-content ,
+body.html.node-type-galeria-imagenes #zone-content,
+body.html.node-type-contenidos #zone-content {
+ margin-top:-42px;
+ padding-top:18px;
+}
+
+/*body.html.page-documentacion #zone-content {
+ margin-top:-37px;
+ padding-top:-12px;
+}*/
+
+body.html.page-node-type-periodico-revista-cobas  .field-name-title h2 {
+ display:none;
+}
+
+
+
+body.html.node-type-periodico-revista-cobas #region-content h1#page-title {
+ background-color:#202020;
+ color:white;
+ display:block;
+ margin-top:12px;
+ margin-left:-10px;
+ padding-left:10px;
+ margin-right:-10px;
+ line-height:1.8em;
+ font-weight:normal;
+ font-size:28px;
+}
+
+#block-views-tweets-block{
+ margin-left:10px;
+}
+/*Nodo completo tipo pagina; vistas 4 elementos, cobas en red...*/
+
+body.html .ds-2col-stacked.node.node-pagina > .group-left,
+body.html .ds-2col-stacked.node.node-provincias > .group-left,
+body.html .ds-2col-stacked.node.node-plantilla-contratas > .group-left,
+body.html .ds-2col-stacked.node.node-plantilla-coorburgos > .group-left,
+body.html .ds-2col-stacked.node.node-plantilla-fedast > .group-left,
+body.html .ds-2col-stacked-fluid.node.node-plantilla-enlaces > .group-left, 
+body.html .ds-2col-stacked.node.node-plantillan-telef > .group-left,
+body.html .ds-2col-stacked.node.node-plantillac > .group-left,
+body.html .ds-2col-stacked.node.node-opinion > .group-left,
+body.html .ds-2col-stacked.node.node-pformacion > .group-left,
+body.html .ds-2col-stacked.node.node-plantilla-enlacesint > .group-left,
+body.html #node-paginab-95,
+body.html table.views-table.cols-3 {
+ width:75%;
+ float:left;
+}
+
+body.html table.views-table.cols-3 {
+ width:73%;
+ float:none;
+ clear:none;
+ margin-top:0px;
+}
+
+body.html #block-views-exp-areas-de-trabajo-page {
+ margin-bottom:10px;
+}
+
+
+body.html .ds-2col-stacked.node.node-pagina > .group-right,
+body.html .ds-2col-stacked.node.node-provincias > .group-right,
+body.html .ds-2col-stacked.node.node-plantilla-contratas > .group-right,
+body.html .ds-2col-stacked.node.node-plantilla-coorburgos > .group-right,
+body.html .ds-2col-stacked.node.node-plantilla-fedast > .group-right,
+body.html .ds-2col-stacked-fluid.node.node-plantilla-enlaces > .group-right,
+body.html .ds-2col-stacked.node.node-plantillan-telef > .group-right,
+body.html .ds-2col-stacked.node.node-plantillac > .group-right,
+body.html .ds-2col-stacked.node.node-opinion > .group-right,
+body.html .ds-2col-stacked.node.node-pformacion > .group-right,
+body.html .ds-2col-stacked.node.node-plantilla-enlacesint > .group-right,
+body.html #block-pubdlcnt-0 { 
+ float:right;
+ width:25%;
+}
+
+/**Sección Noticias y secciones resumen 4 elementos*/
+.view-taxonomy-term,
+#block-views-sector-y-contratas-block,
+#block-views-sector-y-contratas-block-1,
+#block-views-sector-y-contratas-block-2,
+#block-views-provincias-block-1,
+#block-views-noticias-telefonica-block-1,
+#block-views-noticias-telefonica-block-2,
+#block-views-noticias-telefonica-block-3,
+#block-views-noticias-telefonica-block-4 {
+ margin-top:35px;
+ padding-bottom:10px;
+}
+.view-taxonomy-term img,
+#block-views-sector-y-contratas-block img,
+#block-views-sector-y-contratas-block-1 img,
+#block-views-sector-y-contratas-block-2 img,
+#block-views-provincias-block-1 img,
+#block-views-noticias-telefonica-block-1 img,
+#block-views-noticias-telefonica-block-2 img,
+#block-views-noticias-telefonica-block-3 img,
+#block-views-noticias-telefonica-block-4 img {
+ float:left;
+ padding-right:10px;
+ margin-bottom:20px;
+ padding-bottom:10px;
+ padding-left:10px;
+}
+.view-taxonomy-term #section,
+#block-views-sector-y-contratas-block #section,
+#block-views-sector-y-contratas-block-1 #section,
+#block-views-sector-y-contratas-block-2 #section,
+#block-views-noticias-telefonica-block-1 #section,
+#block-views-noticias-telefonica-block-2 #section,
+#block-views-noticias-telefonica-block-3 #section,
+#block-views-noticias-telefonica-block-4 #section {
+ display:none;
+}
+.view-taxonomy-term .etiq,
+#block-views-sector-y-contratas-block .etiq,
+#block-views-sector-y-contratas-block-1 .etiq,
+#block-views-sector-y-contratas-block-2 .etiq,
+#block-views-provincias-block-1 .etiq,
+#block-views-noticias-telefonica-block-1 .etiq,
+#block-views-noticias-telefonica-block-2 .etiq,
+#block-views-noticias-telefonica-block-3 .etiq,
+#block-views-noticias-telefonica-block-4 .etiq {
+ text-align:right;
+ padding-right:10px;
+ font-family: 'Arial', sans-serif;
+}
+.view-taxonomy-term #subt,
+#block-views-sector-y-contratas-block #subt, 
+#block-views-sector-y-contratas-block-2 #subt,
+#block-views-sector-y-contratas-block-1 #subt,
+#block-views-provincias-block-1 #subt, 
+#block-views-noticias-telefonica-block-1 #subt,
+#block-views-noticias-telefonica-block-2 #subt,
+#block-views-noticias-telefonica-block-3 #subt,
+#block-views-noticias-telefonica-block-4 #subt {
+ margin-bottom:0px;
+}
+
+#block-views-sector-y-contratas-block .views-row,
+#block-views-sector-y-contratas-block-1 .views-row,
+#block-views-sector-y-contratas-block-2 .views-row,
+#block-views-provincias-block-1 .views-row,
+#block-views-noticias-telefonica-block-1 .views-row,
+#block-views-noticias-telefonica-block-2 .views-row,
+#block-views-noticias-telefonica-block-3 .views-row,
+#block-views-noticias-telefonica-block-4 .views-row {
+ margin-bottom:25px;
+ clear:both;
+ background-color:white;
+ padding-bottom:10px;
+ padding-top:10px;
+ min-height:200px;
+}
+.view-taxonomy-term .views-row {
+ min-height:15px;
+ background-color:white;
+ padding-left:10px;
+ margin-bottom:1em;
+}
+.view-taxonomy-term #titled a,
+#block-views-sector-y-contratas-block #titled a,
+#block-views-sector-y-contratas-block-1 #titled a,
+#block-views-sector-y-contratas-block-2 #titled a,
+#block-views-provincias-block-1 #titled a,
+#block-views-noticias-telefonica-block-1 #titled a,
+#block-views-noticias-telefonica-block-2 #titled a,
+#block-views-noticias-telefonica-block-3 #titled a,
+#block-views-noticias-telefonica-block-4 #titled a {
+ font-size:27px;
+ background-color:white;
+ background-color:#202020;
+ padding-left:0px;
+ color:white;
+ padding-left:5px;
+}
+.view-taxonomy-term #body1,
+#block-views-sector-y-contratas-block #body1,
+#block-views-sector-y-contratas-block-1 #body1,
+#block-views-sector-y-contratas-block-2 #body1,
+#block-views-noticias-telefonica-block-1 #body1,
+#block-views-noticias-telefonica-block-2 #body1,
+#block-views-noticias-telefonica-block-3 #body1,
+#block-views-noticias-telefonica-block-4 #body1 {
+ padding-right:10px;
+ display:block;
+ visibility:visible;
+}
+
+.block #not {
+ /*width:73%;
+ float:right;*/
+ padding-right:10px;
+ padding-left: 24%;
+}
+
+.view-taxonomy-term #not {
+ padding-left:0.5em;
+ padding-top:0.5em;
+ padding-bottom:0.5em;
+}
+
+
+
+.view-home-comunicados {
+ margin-bottom: 20px;
+}
+.view-home-comunicados .imgb4 {
+ float:right;
+ clear:right;
+}
+.view-home-comunicados .imgb4 img {
+height:120px; 
+}
+.view-home-comunicados .views-row-1 .imgb4 img {
+ height:130px;
+} 
+.view-home-comunicados .views-field .field-content .allb4 {
+ background-color:white;
+ padding-left:10px;
+ padding-right:10px;
+ padding-top:10px;
+ margin-top:10px;
+ padding-bottom:0px;
+ min-height:130px;
+}
+
+/*Afegit: paginador**/
+
+.item-list .pager {
+	border: 0;
+	}
+	
+.pager li.pager-first a, .pager li.pager-previous a, .pager li.pager-next a, .pager li.pager-last a {
+	opacity: 0;
+	height: 25px;
+	}
+body.responsive-layout-fluid .pager li.pager-next a {
+ margin-right:78%;
+}
+
+
+.pager li.pager-current {
+	background-color: #E5E5E5;
+	border-right: 0;
+	color: transparent;
+	background-image: none;
+	}
+	
+.item-list .pager li.pager-next.last {
+	border-left: 0;
+	background-repeat: no-repeat;
+	background-image: url('../images/flecha_d.png');
+	margin-top: -5px;
+	}
+	
+.item-list .pager li.pager-previous.first {
+	border-right: 0;
+	background-repeat: no-repeat;
+	background-image: url('../images/flecha_i.png');
+	margin-top: -5px;
+	}
+/****************PAGINAS INTERIORES****************************************/
+
+
+/*Seccion Normativa*/
+
+body.responsive-layout-fluid.node-type-normativa #indice {
+ width:42%;
+ float:right;
+}
+body.responsive-layout-fluid.node-type-normativa #normativa {
+ width:51%;
+ float:left;
+ clear:none;
+}
+/*Search*/
+body.html #block-search-form {
+ padding-left:10px;
+ padding-right:10px;
+ padding-bottom:10px;
+}
+
+body.responsive-layout-fluid.html #block-search-form {
+ margin-top:35px;
+}
+
+body.html.page-node-100 #search-block-form {
+ float:right;
+}
+
+/*Sección Documentación*/
+/*Bloque+descarg*/
+
+body.html.page-documentacion #block-search-form {
+ float:right;
+ width:25%;
+ padding-right:0px;
+ display:block;
+ visibility:visible;
+}
+
+body.html.responsive-layout-fluid.page-documentacion #block-search-form {
+  margin-top:0px;
+}
+
+body.html #block-pubdlcnt-0,
+body.html #block-views-tagadelic-block-2 { 
+ width:25%;
+ float:right;
+ display:block;
+ visibility:visible;
+ clear:right;
+}
+
+body.responsive-layout.fluid #block-views-tagadelic-block-2 {
+ max-height:50px;
+}
+body.html #block-pubdlcnt-0 a {
+ color:white;
+}
+body.html #block-pubdlcnt-0 {
+ background-color:#CC3333;
+ margin-bottom:1em;
+ }
+
+body.html #block-views-tagadelic-block a,
+body.html #block-views-tagadelic-block-1 a,
+body.html #block-views-tagadelic-block-2 a {
+ color:#999999;
+}
+
+body.responsive-layout-fluid .tagadelic a {
+ font-size:
+}
+
+body.responsive-layout-fluid.page-documentacion .feed-icon {
+ display:none;
+}
+
+body.responsive-layout-fluid.page-documentacion .views-exposed-form {
+ width:90%;
+ padding-left:1%;
+}
+
+/*Enlaces*/
+.block-enlaces-block block-title h2 {
+ display:none;
+}
+
+body.responsive-layout-fluid #block-views-enlaces-block-1 img {
+ display:none;
+}
+
+body.responsive-layout-fluid #block-views-enlaces-block-1 {
+ padding-left:10px;
+}
+
+body.responsive-layout-fluid #block-views-enlaces-block-1 h2 {
+ margin-bottom:0px;
+}
+
+body.html.node-type-plantilla-enlacesint .view-filters {
+ margin-bottom:15px;
+}
+
+/*Page Subs*/
+
+body.page-node-55 .form-type-textfield label {
+ display:inline;
+ padding-right:20px;
+}
+
+body.page-node-55 .group-left input[type="text"] {
+ width:275px;
+}
+
+
+
+/*MULTIMEDIA*/
+
+body.node-type-paginab.html.page-node-100 #block-search-form {
+ display:block;
+ visibility:visible;
+}
+
+
+body.node-type-paginab #block-views-tagadelic-block {
+ width:24%;
+ float:right;
+}
+
+body.responsive-layout-fluid.page-node-100 #block-views-tagadelic-block {
+ display:none;
+}
+
+#block-views-tagadelic-block-1 {
+ margin-left:10px;
+ padding-left:5px;
+ margin-top:20px;
+ margin-bottom:10px;
+}
+
+#block-views-tagadelic-block-1 h2.block-title {
+ display:none;
+}
+
+#block-views-tagadelic-block .more-link,
+#block-views-tagadelic-block-1 .more-link {
+ display:none;
+}
+
+/*Multimedia*/
+
+body.html.responsive-layout-fluid #block-views-galeria-video-block-1 .views-field-nothing span.more a,
+body.html.responsive-layout-fluid #block-views-galeria-video-block-1 .views-field-nothing span.more * {
+ font-size:15px;
+}
+
+body.html.responsive-layout-fluid #block-views-galeria-video-block-1 .views-field-nothing h1 a { 
+font-family:'Bebas',Arial,sans-serif;
+font-weight:25px;
+color:#202020;
+text-transform:uppercase;
+font-weight:normal;
+font-size:1em;
+}
+body.html.responsive-layout-fluid #block-views-galeria-video-block-1 .field-content p {
+ font-size:15px;
+} 
+body.html.responsive-layout-fluid #block-views-galeria-video-block-1 .views-field-field-video {
+ padding-top:10px;
+}
+
+body.html.responsive-layout-fluid #block-views-galeria-video-block img {
+ border: solid 10px #202020;
+}
+body.html.responsive-layout-fluid #block-views-galeria-video-block .titulov a {
+ padding-right:0px;
+}
+
+body.html.responsive-layout-fluid #block-views-galeria-video-block .titulov {
+ margin-top:5px;
+ margin-left:0px;
+}
+
+body.html.responsive-layout-fluid.node-type-paginab.html.page-node-100 #block-search-form {
+ margin-right:5%;
+}
+
+
+/*Revista*/
+
+body.responsive-layout-fluid.node-type-normativa #issue, 
+body.responsive-layout-fluid.node-type-normativa .issuuembed {
+ width:100%;
+ clear:right;
+}
+
+body.responsive-layout-fluid.node-type-normativa #perdat {
+ margin-left:12px;
+ width:auto;
+}
+
+body.responsive-layout-fluid.node-type-normativa #block-views-revista-block-2 #perdat {
+ width:100%;
+}
+
+body.html.responsive-layout-fluid.page-node-type-periodico-revista-cobas .ds-2col-stacked.node.node-pagina > .group-left {
+ width:50%;
+ float:left;
+ clear:none;
+}
+
+body.html.responsive-layout-fluid.page-node-type-periodico-revista-cobas .ds-2col-stacked.node.node-pagina > .group-right {
+ float:right;
+ width:30%;
+ clear:right;
+}
+
+body.html.responsive-layout-fluid.page-node-type-periodico-revista-cobas .ds-2col-stacked.node.node-pagina > .group-right  .field-name-field-subtp {
+ font-family:'Arial', serif;
+ font-size:21px;
+}
+
+
+
+
+/*Galeria de video*/
+body.html #block-views-galeria-video-block,
+#block-views-galeria-de-fotos-block {
+ width:60%;
+ float:left;
+}
+
+body.responsive-layout-fluid #block-views-galeria-video-block,
+body.responsive-layout-fluid #block-views-galeria-de-fotos-block {
+ width:100%;
+ float:left;
+}
+
+body.responsive-layout-fluid #block-views-galeria-video-block, #block-views-galeria-de-fotos-block {
+ padding-left:10px;
+
+}
+
+
+body.html #block-views-galeria-video-block .views-row {
+ width:30%;
+ float:left;
+ margin-bottom:10px;
+ padding:8px;
+ padding-right:10px;
+ height:250px;
+}
+
+body.responsive-layout-fluid #block-views-galeria-de-fotos-block-1 .jcarousel-container-horizontal,
+#block-views-galeria-de-fotos-block-1 .jcarousel-clip-horizontal {
+ width:700px;
+ height:300px;
+}
+
+/*body.responsive-layout-fluid #block-views-galeria-video-block .views-row {
+ width:45%;
+ margin-right:10px;
+ padding-right:10px;
+}*/
+
+body.responsive-layout-fluid.page-node-100 .pager-next,
+body.responsive-layout-fluid.page-node-100 .item-list .pager li.pager-next.last {
+ width:6%;
+ margin-top:-23%;
+}
+
+
+
+body.html #block-views-galeria-de-fotos-block-1 {
+ width:60%;
+ float:left;
+}
+body.html #block-views-galeria-video-block-1 {
+ margin-bottom:10px;
+}
+body.html #block-views-galeria-video-block-1  .views-field-field-video {
+ width:55%;
+ float:left;
+ margin-right:20px;
+ padding-left:8px;
+}
+body.html #block-views-galeria-video-block-1 .views-field-nothing {
+ width:40%;
+ float:left;
+ margin-right:20px;
+}
+
+body.responsive-layout-fluid #block-views-galeria-video-block-1 .views-field-nothing {
+ width:auto;
+ padding-left:10px;
+}
+
+body.html #block-views-galeria-video-block-1 .views-field-nothing a {
+ font-size:20px;
+}
+
+/*GALERIA FOTOS*/
+#block-views-galeria-de-fotos-block-1 {
+ margin-left:10px;
+}
+
+#block-views-galeria-video-block h2,
+#block-views-galeria-de-fotos-block-1 h2 {
+ font-size:25px;
+}
+#block-views-galeria-video-block h2 {
+ margin-left:10px;
+}
+
+/*#block-views-galeria-de-fotos-block-1 .jcarousel-container-horizontal,
+#block-views-galeria-de-fotos-block-1 .jcarousel-clip-horizontal {
+ width:800px;
+ height:300px;
+}*/
+
+
+#block-views-galeria-de-fotos-block-1 .jcarousel-item {
+ height:200px;
+ width:300px;
+}
+#block-views-galeria-de-fotos-block-1 .jcarousel-view--galeria-de-fotos--block-1 {
+ height:205px;
+}
+
+#block-views-galeria-de-fotos-block-1 .jcarousel-prev-horizontal {
+ background-position:-66px 0px;
+ left:-15px;
+ top:95px;
+}
+#block-views-galeria-de-fotos-block-1 .jcarousel-next-horizontal {
+ background-position: 66px -32px;
+ right:-15px;
+ top:95px;
+}
+#block-views-galeria-de-fotos-block-1 .jcarousel-container-horizontal {
+ padding-left:15px;
+ padding-right:15px;
+}
+
+#block-views-galeria-de-fotos-block-1 .jcarousel-item {
+ background-color:#e5e5e5;
+ border:none;
+ height:205px;
+ width:auto;
+ padding-left:0px;
+ padding-right:0px;
+ margin-right:0px;
+ margin-left:0px;
+}
+
+#block-views-galeria-de-fotos-block-1 .jcarousel-item img {
+ padding-top:2px;
+ padding-bottom:2px;
+ padding-right:5px;
+ vertical-align:middle;
+}
+
+
+
+/*VIDEO NODO COMPLETO*/
+
+body.html.responsive-layout-fluid.node-type-video #headerall .group-header {
+ width:100%;
+}
+
+body.html.responsive-layout-fluid.node-type-video .group-header .field-name-post-date {
+ margin-top:0px;
+}
+
+body.html.responsive-layout-fluid.node-type-video #headerall .group-header .field-name-body {
+ margin-top:15px;
+ margin-left:15px;
+}
+
+body.html.responsive-layout-fluid.node-type-video #headerall .group-header .field-name-body p,
+body.html.responsive-layout-fluid.node-type-video #headerall .group-header .field-name-body br {
+ padding-bottom:5px;
+}
+
+body.node-type-video .ds-3col-stacked > .group-left {
+ width:70%;
+ margin-right:3%;
+}
+
+body.node-type-video .ds-3col-stacked > .group-left .field-items {
+ text-align:center;
+}
+
+
+body.node-type-video .group-header .field-name-post-date {
+ margin-top:0px;
+}
+body.node-type-video #headerall .group-header {
+ width:90%;
+}
+
+body.node-type-video #headerall .group-footer,
+body.node-type-video  .ds-3col-stacked > .group-middle {
+ display:none;
+}
+
+body.node-type-video .field-name-field-tematica,
+body.node-type-video .field-name-field-tags {
+ margin-left:25px;
+}
+
+body.node-type-video .field-name-field-tags a {
+ float:left;
+ padding-right:5px;
+}
+.field-name-field-enlaces-relacionados a {
+ margin-bottom:5px;
+}
+.field-name-field-enlaces-relacionados a:visited {
+ color:#202020;
+}
+
+
+.field-name-field-enlaces-relacionados .field-label {
+ font-family:'Bebas';
+ font-size:20px;
+ font-weight:normal;
+}
+
+.field-name-field-enlaces-relacionados .field-items {
+ padding-left:10px;
+}
+
+.field-name-field-enlaces-relacionados .field-item {
+ padding-top:5px;
+ padding-bottom:5px;
+}
+
+body.responsive-layout-fluid.node-type-video .ds-3col-stacked > .group-left {
+ float:left;
+ width:auto;
+}
+
+body.responsive-layout-fluid.node-type-video .ds-3col-stacked > .group-right {
+ float:right;
+ width:25%;
+}
+
+
+
+/*BLOQUE DESTACADO*/
+#block-views-bloque-destacado-block {
+/* margin:10px;*/
+ min-height:324px;
+ margin-top:10px;
+ border-top:solid 10px #e5e5e5;
+ text-align:center;
+}
+body.html #block-views-bloque-destacado-block #textbloc {
+ display:none;
+ 
+}
+/*Provincias*/
+
+#views-exposed-form-provincias-block-1 {
+ margin-top:-35px;
+ margin-bottom:15px;
+}
+#block-views-enlaces-block-2 {
+ margin-left:10px;
+
+
+
+}
+#block-views-enlaces-block-2  .views-row {
+ text-align:center;
+ background-color:#202020;
+ margin-bottom:-15px;
+}
+#block-views-enlaces-block-2  .views-row a {
+ color:white;
+}
+
+body.responsive-layout-fluid #block-views-enlaces-block img {
+ display:none;
+}
+
+/**Nodo completo tipo noticias**/
+
+/*Identificación tipo de contenido*/
+body.not-front .field-name-field-tipo-de-contenido {
+ margin-top:7px;
+ margin-left:8px;
+}
+
+body.responsive-layout-fluid.not-front .field-name-field-tipo-de-contenido {
+ margin-left:0px;
+}
+
+
+body.not-front .field-name-field-tipo-de-contenido a {
+ background-color:#CC3333; 
+ color:white;
+ padding-left:5px;
+ padding-right:25%;
+ font-family:'Arial', sans-serif;
+}
+body.not-front #breadcrumb { 
+ margin-left:0px;
+ padding-left:10px;
+ display:none; /**de momento la escondemos y mostramos la taxonomia del tipo de contenido*/
+}
+body.not-front #breadcrumb a {
+ background-color:#CC3333; 
+ color:white;
+ padding-left:5px;
+ padding-right:25%;
+ margin-left:-10px;
+ float:left;
+ margin-top:-18px;
+}
+#region-content h1#page-title {
+ display:none;
+}
+body.not-front #zone-header-wrapper {
+}
+body.not-front #zone-content {
+ background-color:#E5E5E5;
+}
+
+body.not-front.responsive-layout-fluid #zone-content {
+ margin-top:-42px;
+ padding-top:20px;
+}
+
+
+
+/**
+ * @file
+ * Styling for the ds-3col-stacked template.
+ */
+
+/**Cambiado el tpl para dividir la cabecera en dos partes englobado en #headerall. La modificación esta en el tpl del modulo ds*/
+body.page-node- #headerall{
+ clear:both;
+}
+/*body.page-node- #headerall .group-header {
+  float:left;
+  width:50%;
+  margin-left:-20px;
+}
+body.page-node- #headerall .group-footer {
+ float:right;
+ width:50%;
+ padding-top:4%;
+}*/
+
+
+body.node-type-actas #headerall .group-header {
+  /*max-height:90px;*/
+}
+
+body.page-node- .field-name-title,
+body.page-node- .field-name-title h2 {
+/* background-color:#363333;*/
+/* color:white;
+ margin-right:20px;
+ padding-left:15px;
+ margin-top:20px;
+ font-weight:normal;
+display:none;*/
+margin-left:-10px;
+}
+
+body.page-node-.node-type-periodico-revista-cobas .field-name-title, body.page-node- .field-name-title h2 {
+ display:none;
+}
+
+div.group-header div.field .field-items .field-item h2 {
+ background-color: #363333;
+ display: inline;
+ line-height: 1.5em;
+ margin-left:0px; /*-15px;*/
+ margin-right: 20px;
+ margin-top: 20px;
+ padding-left: 40px;
+ padding-right: 5px;
+ white-space: pre-wrap;
+ padding-left: 0px;
+/* white-space:pre;*/
+ margin-right:0px;
+ padding-right:0px;
+}
+
+
+
+div.group-header div.field .field-items .field-item h2 span{
+  background-color: #363333;
+  padding: 0 6px;
+  margin: 0 -4px;
+  margin-left: -4px;
+  padding-left: 6px;
+}
+
+div.group-header div.field .field-items .field-item h2 span.word1 {
+ padding-left:10px;
+}
+
+
+/*.field-items .field-item h2.block-title {
+background-color: #FFFFFF;
+}*/
+
+body.page-node- .group-header .field-name-field-subt-tulo,
+body.page-node- .group-header .field-name-field-subt-tulo-2,
+body.page-node- .group-header .field-name-field-subt-tulo-3,
+body.page-node- .group-header .field-name-field-subt-tulo-4 {
+ background-color:white;
+ font-family:'Arial';
+ font-weight:bold;
+ margin-right:25px;
+ padding-left:15px;
+ padding-right:5px;
+}
+body.page-node- .#headerall .group-footer {
+ float:right;
+ width:50%; 
+ clear: right;
+}
+body.page-node- .group-footer .field-slideshow-pager {
+ width:50%;
+ float:right;
+ text-align:right;
+/*display:none;deshabilitar*/
+}
+body.page-node- .group-footer .field-slideshow-pager a {
+ padding-right:5px;
+ background-image:url('../images/bola.png')
+ background-repeat:no-repeat;
+ padding:0px 3px;
+}
+body.page-node- .ds-3col-stacked > .group-left,
+body.page-node- .ds-3col-stacked > .group-middle,
+body.page-node- .ds-3col-stacked > .group-right {
+ background-color:white;
+ margin-top:10px;
+ padding-left:5px;
+ padding-top:10px;
+}
+body.page-node- .ds-3col-stacked > .group-left,
+body.page-node- .ds-3col-stacked > .group-middle,
+body.page-node- .ds-3col-stacked > .group-right {
+ margin-top:30px;
+}
+body.page-node- .ds-3col-stacked > .group-left {
+  width: 49%;
+  float: left; /* LTR */
+  margin-right:10px;
+  padding-right:5px;
+  margin-bottom:20px;
+  clear:left;
+}
+
+/*Cuerpo*/
+body.html.page-node .group-header .field-name-post-date {
+ background-color:#6b615b;
+ color:white;
+ padding-right:5px;
+ padding-left:15px;
+ position:relative;
+/* top:120px; **mirar qué sucede cuando se hace más estrecha la pantalla*/
+ width:30%;
+ margin-top:20%;
+}
+
+
+
+body.responsive-layout-fluid.page-node .group-header .field-name-post-date {
+ width:40%;
+ margin-top:25%;
+}
+
+
+body.page-node .group-header .field-name-post-date.field-item {
+ background-color:#6b615b;
+}
+body.node-type-actas .group-header .field-name-post-date {
+ bottom:20px;
+ margin-top:5%;
+}
+
+body.html.page-node- .field-name-body p {
+ margin-bottom:0px;
+ font-family: 'Georgia', Helvetica, Arial, serif;
+ font-size:15px;
+ padding:0px;
+/* padding-left:10px;
+ padding-right:10px;
+ padding-bottom:5px;*/
+}
+body.page-node- .field-name-body,
+body.page-node- .field-name-field-texto-destacado,
+body.page-node- .field-name-field-cuerpo-2 {
+ font-family: 'Georgia', Helvetica, Arial, serif;
+ padding-bottom:20px;
+ padding-left:10px;
+ padding-right:10px;
+}
+body.page-node- .field-name-field-texto-destacado {
+ font-weight:bold;
+ font-size:18px;
+ font-style:italic;
+ padding-left:26px;
+ padding-right:26px;
+ padding-top:10px;
+ padding-bottom:10px;
+}
+/*body.page-node- .ds-3col-stacked > .group-middle {
+  width: 24%;
+  float: left;  LTR 
+  margin-right:10px;
+  margin-bottom:10px;
+  padding-top:0px;
+}*/
+body.page-node .ds-3col-stacked .group-middle iframe {
+ width:99%;
+ height:inherit;
+}
+/*body.page-node- .ds-3col-stacked > .group-right {
+  width: 24%;
+  float: left; LTR 
+  padding-left:0px;
+  padding-top:0px;
+}*/
+
+body.page-node .ds-3col-stacked .field-name-field-tematica,
+body.page-node .ds-3col-stacked .field-name-body,
+body.page-node .ds-3col-stacked #block-views-contenidos-relacionados-block h2 {
+ padding-top:2px;
+}
+
+body.page-node .ds-3col-stacked .field-name-field-tematica,
+body.page-node .ds-3col-stacked .field-type-taxonomy-term-reference a {
+ padding-left:5px;
+}
+
+body.page-node .ds-3col-stacked #block-views-contenidos-relacionados-block h2 {
+ padding-left:5px;
+ font-size:1.5em;
+}
+
+body.page-node .ds-3col-stacked .group-middle .field-type-taxonomy-term-reference * {
+ float:left;
+ background-color:#ffffff;
+ padding-right:2px;
+}
+
+
+
+/*Group Header*/
+/*body.page-node #headerall .field-slideshow-wrapper *{
+ float:right;
+}*/
+
+body.page-node #headerall .field-slideshow-wrapper *{
+ float:right;
+}
+
+
+
+/*body.page-node- #headerall .field-name-field-image img {
+ z-index:00000;
+  }*/
+body.page-node #headerall img {
+ float:right;
+}
+
+body.page-node- .group-header .field field-name-title,
+body.page-node- .group-header .field-name-field-subt-tulo,
+body.page-node- .group-header .field-name-field-subt-tulo-2,
+body.page-node- .group-header .field-name-field-subt-tulo-3,
+body.page-node- .group-header .field-name-field-subt-tulo-4  {
+ float:left;
+ clear:right;
+ width:75%;
+ margin-left:0px;
+ padding-left:10px;
+}
+/**Bloque Middle**/
+body.node-type-contenidos .field-name-field-archivo-adjunto .field-label,
+body-page-node .field-name-field-archivo-adjunto .field-label,
+body.page-node .field-type-markup p {
+ padding:0px;
+ margin:0px;
+ font-family:'Bebas';
+ text-transform:uppercase;
+ font-size:20px;
+ font-weight:normal;
+}
+/**Bloque Contenidos Relacionados**/
+body.html #block-views-contenidos-relacionados-block h2 {
+ font-weight:normal;
+ padding-left:10px;
+}
+body.html #block-views-contenidos-relacionados-block .views-field-type {
+ background-color: #CC3333;
+ color: white;
+ font-weight:bold;
+ margin-bottom:5px;
+ padding-left:10px;
+}
+body.html #block-views-contenidos-relacionados-block .views-field-title a {
+ background:#1a1a1a scroll 0 0 none;
+ white-space:pre-wrap;
+ color: white;
+ text-transform:uppercase;
+ padding-left:10px;
+ padding-right:3px;
+ font-family:'Bebas';
+ font-size:20px;
+ font-weight:normal;
+ padding-top:2px;
+}
+body.html #block-views-contenidos-relacionados-block .views-field-field-subt-tulo {
+ padding-left:10px;
+ font-size:15px;
+ font-weight:bold;
+ padding-top:5px;
+ padding-bottom:5px;
+ font-family:'Arial','Georgia', 'Helvetica', sans-serif ;
+ font-size:15px;
+}
+body.html #block-views-contenidos-relacionados-block .views-field-body {
+ font-family:'Verdana';
+/* padding-left:10px;*/
+ margin-bottom:20px;
+ margin-left:10px;
+ margin-right:10px;
+ padding-bottom:20px;
+ border-bottom:solid 1px #CC3333;
+}
+body.html #block-views-contenidos-relacionados-block .views-field-body p {
+ margin-bottom:1px;
+ font-family:'Georgia', Helvetica, Arial, serif;
+ display:inline;
+}
+
+#block-views-tweets-block-1 {
+ border-top:solid 10px #e5e5e5;
+ border-bottom:solid 10px #e5e5e5;
+}
+body.front #block-views-tweets-block-1 {
+ border-top:none;
+ width:inherit;
+ /*width:103%;*/
+}
+#block-block-24,
+#block-views-tweets-block-1,
+#block-views-bloque-destacado-block {
+ background-color: #e5e5e5; 
+}
+
+#block-block-24 img {
+ margin-left:0px;
+ width:100%;
+ margin-bottom:-25px;
+}
+
+
+body.responsive-layout-fluid #block-block-24 img {
+ margin-left:-5px;
+ width:102%;
+ margin-bottom:-25px;
+}
+
+#block-views-tweets-block-1,
+#block-views-bloque-destacado-block {
+ background-color: #e5e5e5; 
+}
+#block-views-tweets-block-1,
+#block-views-bloque-destacado-block {
+ font-family:'Arial', sans-serif;
+ font-size:13px;
+ line-height:17px;
+ margin-left:10px;
+}
+
+body.responsive-layout-fluid.node-type-contenidos #block-views-bloque-destacado-block {
+ margin-left:0px;
+}
+
+
+
+/***Nodo completo tipo page*****************************/
+body.responsive-layout-fluid.node-type-pagina .field-name-body {
+ background-color:white;
+ padding:10px 10px;
+ margin-bottom:10px;
+}
+
+
+
+/*Estilo ckeditor para el destacado dentro del cuerpo de texto del nodo entero*/
+ 
+h3.destacado {
+ font-weight:bold;
+ font-size:18px;
+ font-style:italic;
+ padding-left:26px;
+ padding-right:26px;
+ padding-top:10px;
+ padding-bottom:10px;
+ font-family:'Georgia', Helvetica, Arial, serif;
+ }
+
+
+/*Compartir y divulgar*/
+
+body.html div#block-print-print-links span.print_html,
+body.html #twcompartirwrapper,
+body.html #fbcompartirwrapper {
+ display:block;
+ visibility:visible;
+}
+
+
+body.html.page-node- #socialwrapper,
+body.html.page-node- #block-print-print-links {
+ width:64%;
+}
+body.html .field-type-ds div#block-print-print-links span {
+ float:left;
+ margin-top:35px;
+ display:block;
+ width:50%;
+ margin-left:14px;
+}
+
+body.html .field-type-ds div#block-print-print-links span.print_mail {
+ margin-top:2.5%;
+ margin-left:14px;
+ overflow: visible;
+}
+
+body.html .field-type-ds div#block-print-print-links {
+ background-color: #CC3333;
+ background-image: url("../images/compartir_divulgar.png");
+ background-repeat: no-repeat;
+ float: left;
+ height: 180px;
+ margin-bottom: -95px;
+ margin-left: 0;
+ margin-top: 30px;
+ width: 65%;
+}
+
+
+
+body.html.page-node- #socialwrapper {
+  background-color: #CC3333;
+  float: left;
+  height: 150px;
+  margin-left: 0;
+  margin-top: 30px;
+  width: 100%;
+  padding-top: 30px;
+}
+/*body.html.page-node- #twcompartirwrapper,
+body.html.page-node- #facebookwrapper {
+ margin-left:20%;
+}*/
+
+body.html #twitterwrapper {
+    float: left;
+    margin-left: 14px;
+    margin-top: 70px;
+}
+
+body.html #twcompartirwrapper {
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 6px;
+    margin-top: 70px;
+    position:relative;
+}
+
+body.html #facebookwrapper {
+    float: left;
+    margin-top: 105px;
+    position: absolute;
+    margin-left:14px;
+}
+body.html #fbcompartirwrapper {
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 45px;
+    margin-top: 105px;
+    position: absolute;
+}
+
+
+
+/*************************
+ **Fluid*
+ *************************/
+
+body.responsive-layout-fluid.page-node- .ds-3col-stacked.node.node-contenidos #headerall {
+ padding-left:10px;
+ padding-right:10px;
+}
+
+body.html.page-node- #headerall .group-header {
+  float:left;
+  width:46%;
+  margin-left:-20px;
+  clear:none;
+}
+
+body.html.node-type-actas.page-node- #headerall .group-header {
+ width:100%;
+}
+
+body.html.node-type-actas.page-node .group-header .field-name-post-date {
+ margin-top:30px;
+}
+
+
+body.html.responsive-layout-fluid.page-node- #headerall .group-header {
+ margin-left:-9px;
+}
+
+
+body.html.responsive-layout-fluid.page-node-.node-type-contenidos #headerall .group-header {
+ margin-left:-19px;
+}
+
+body.html.page-node- #headerall .group-footer {
+ float:right;
+ width:55%;
+ padding-top:4%;
+ clear:right;
+ margin-right:10px;
+}
+
+body.html.responsive-layout-fluid.page-node- #headerall .group-footer {
+ width:44%;
+}
+
+body.html.page-node- .ds-3col-stacked.node.node-contenidos #headerall > .group-footer {
+ border-left:none;
+ border-right:none;
+ padding-right:15px;
+}
+
+body.html.responsive-layout-fluid.page-node- .ds-3col-stacked.node.node-contenidos #headerall > .group-footer {
+/* margin-top:-50%;*/
+}
+
+body.responsive-layout-wide.page-node- #headerall .field-slideshow-wrapper * .field-slideshow
+
+body.responsive-layout-fluid.page-node- #headerall .group-header {
+ /*border-left:solid 10px #363333;*/
+ padding-right:5px;
+}
+
+body.html.responsive-layout .ds-3col-stacked.node.node-contenidos #headerall > .group-footer {
+/* border-right:solid 10px #363333;
+ padding-right:10px;*/
+}
+
+
+body.responsive-layout-fluid.page-node- .ds-3col-stacked > .group-left {
+ width:65%;
+ clear:none;
+ margin-right:0.1em;
+ padding-right:5px;
+}
+
+body.responsive-layout-fluid.page-node-.node-type-video .ds-3col-stacked > .group-left {
+ width:100%;
+ margin-bottom:0px;
+}
+
+body.html.responsive-layout-fluid.node-type-video.page-node- #socialwrapper {
+ width:100%;
+}
+
+body.html.responsive-layout-fluid.node-type-video.page-node- .group-right {
+ width:100%;
+ float:left;
+}
+
+body.html.responsive-layout-fluid.node-type-video.page-node- .group-right  .field-name-bloquesubsboletin,
+body.html.responsive-layout-fluid.node-type-video.page-node- .group-right  .field-name-bloque-destacado {
+ width:50%;
+ float:left;
+}
+
+body.responsive-layout-fluid.page-node- .ds-3col-stacked .field-name-field-tematica, 
+body.responsive-layout-fluid.page-node- .ds-3col-stacked .field-name-body, 
+body.responsive-layout-fluid.page-node- .ds-3col-stacked #block-views-contenidos-relacionados-block h2 {
+ padding-top:0px;
+}
+
+
+body.responsive-layout-fluid.page-node- .ds-3col-stacked > .group-middle ,
+body.responsive-layout-fluid.page-node- .ds-3col-stacked > .group-right {
+ width:31%;
+ float:right;
+ clear:none;
+ border-left:0px;
+ margin-left:0px;
+}
+
+
+body.responsive-layout-fluid.page-node- .ds-3col-stacked > .group-right {
+ background-color:#E5E5E5;
+ clear:right;
+ margin-top:0px;
+ padding-top:0px;
+ border-top:none;
+}
+
+body.page-node- #block-views-bloque-destacado-block img {
+ width:100%;
+}
+
+body.responsive-layout-fluid.page-node- #block-views-bloque-destacado-block {
+ margin-top:0px;
+ border-top:none;
+}
+
+body.responsive-layout-fluid.node-type-actas #block-views-bloque-destacado-block {
+ margin-left:0px;
+ margin-bottom:15px;
+}
+
+body.responsive-layout-fluid.page-node- .ds-3col-stacked > .group-right #block-views-contenidos-relacionados-block,
+body.responsive-layout-fluid.page-node- .ds-3col-stacked > .group-right div.field field-name-rel {
+ display:none;
+}
+/*Peu*/
+
+body.responsive-layout-fluid #block-block-4 p {
+ text-align:left;
+ padding-left:1em;
+}
+
+
+/*View Taxonomy Term*/
+
+.view-taxonomy-term {
+ margin-top:2%;
+}
+
+
+
+/*Formulario Creación Contenidos*/
+
+body.page-node-add-contenidos .link-edit-summary{
+ display:none;
+}
+
+/*Icono archivo adjunto vista Documentos nodo completo*/
+
+body.html #adj img,
+body.node-type-contenidos .field-name-field-archivo-adjunto img,
+body.page-documentacion .views-field-field-archivo-adjunto img,
+body.node-type-actas .field-name-field-archivo-adjunto img,
+body.node-type-periodico-revista-cobas .field-name-field-archivo-adjunto img,
+body.node-type-normativa #adjp img  {
+ display:none;
+}
+
+body.html #adj span.file,
+body.html.node-type-contenidos .field-name-field-archivo-adjunto .field-item span.file,
+body.html.page-documentacion .views-field-field-archivo-adjunto span.file,
+body.html.node-type-periodico-revista-cobas .views-field-field-archivo-adjunto span.file,
+body.html.node-type-normativa #adjp span.file {
+ background-image: url('http://cluster006.ovh.net/~projecten/cobas/sites/all/themes/cobas/images/fileadjpet.png');
+ line-height:3em;
+ padding-left:4em;
+ display:block;
+ background-repeat:no-repeat;
+}
+body.html #adj span.file,
+body.html.node-type-contenidos .field-name-field-archivo-adjunto .field-item span.file,
+body.html.node-type-periodico-revista-cobas .field-name-field-archivo-adjunto .field-item span.file,
+body.html.node-type-normativa #adjp span.file {
+ margin-bottom:2px;
+ width:auto;
+ margin-left:0px;
+ margin-right:5px;
+ background-color:#ECECEC;
+ cursor:pointer;
+ margin-top:5px;
+}
+
+
+body.html.node-type-actas .field-name-field-archivo-adjunto .field-item span.file,
+body.html.node-type-periodico-revista-cobas .field-name-field-archivo-adjunto .field-item span.file,
+body.html.node-type-normativa  #adjp span.file  {
+ background-image: url('http://cluster006.ovh.net/~projecten/cobas/sites/all/themes/cobas/images/fileadj.png');
+ background-repeat:no-repeat;
+ line-height:50px;
+ padding-left:5em;
+ display:block;
+ cursor:pointer;
+ background-color:#ECECEC;
+ margin-bottom:10px;
+}
+
+body.html.node-type-actas .field-name-field-archivo-adjunto {
+ padding-left:0px;
+ padding-right:5px;
+}
+
+
+body.node-type-actas .ds-3col-stacked > .group-right {
+ background-color:#E5E5E5;
+}
+
+body.node-type-actas #block-views-bloque-destacado-block {
+ border-top:none;
+ margin-top:0px;
+ margin-left:0px;
+ margin-bottom:10px;
+ background-color:#FFFFFF;
+}
+
+body.node-type-actas #block-views-bloque-destacado-block img {
+ height:100%;
+}
+
+
+body.node-type-actas .ds-3col-stacked > .group-left,
+body.node-type-actas .ds-3col-stacked > .group-middle,
+body.node-type-actas .ds-3col-stacked > .group-right {
+ margin-top:40px;
+}
+
+/*USER MENU BLOCk*/
+
+#block-system-user-menu ul li.leaf {
+ list-style:none;
+ float:left;
+}
+
+/*Panel Control*/
+
+body.page-node-148 .ds-2col-stacked > .group-right {
+ display:none;
+}
+
+body.page-node-148 a {
+ color:#202020;
+}
+
+body.page-node-148 .view-header {
+ background-color:white;
+}
+
+body.page-node-148 .view-header a {
+ font-family: Arial;
+ text-transform:uppercase;
+ padding-left:5px;
+ margin-left:5px;
+ padding-right:1em;
+ font-size:1.5em;
+ color:#202020;
+ background-color:#CCCCCC;
+}
+
+body.page-node-148 h2.block-title {
+ font-family:Arial;
+ margin-bottom:0.5em;
+ margin-top:0.5em;
+}
+
+
+div.ddblock-cycle-custom50p div.slide-inner img {
+ 	float: right;
+    height: 382px;
+    margin: 0 !important;
+    padding-right: 10px;
+    padding-top: 10px;
+    width: 732px;
+}
+
+
+
+/*Print no relevantes*/
+
+body.page-node-100 nav.node-links,
+body.page-node-75 nav.node-links,
+body.page-node-95 nav.node-links {
+ display:none;
+}
+
+/*Hide block simplenews*/
+
+#block-simplenews-34,
+#block-simplenews-0 {
+ display:none;
+}
+
+body.page-node-55 #block-simplenews-34,
+body.page-node-55 #block-simplenews-0 {
+ display:block;
+ margin-left:10px;
+}
+
+body.page-node-55 #block-simplenews-34 p {
+ display:none;
+}
+
+
+body.page-node-55 .ds-2col-stacked > .group-left {
+ background-color:white;
+}
+
+body.page-node-55 #simplenews-block-form-34 {
+ margin-bottom:1em;
+}
+
+body.page-node-55 .issues-link,
+body.page-node-55 .feed-icon {
+ display:none;
+}
+
+#edit-search-block-form--2 input[type="search"] {
+ width:15em;
+}
+
+body.html.page-user #section-content {
+ margin-top:12px;
+}
+
+body.html ul#nice-menu-2 li.menuparent {
+ width:18em;
+}
+
+body.html #block-nice-menus-2 {
+ margin-bottom:1em;
+}
+
+
+

@@ -1,0 +1,95 @@
+/* This file will hold styles that are loaded using the same media query as the wide grid. */
+
+.container-12 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+
+/*Recuperando bloques*/
+
+body.responsive-layout-wide #block-views-home-block-1,
+body.responsive-layout-wide #block-views-home-block-2,
+body.responsive-layout-wide #block-views-home-block-3,
+body.responsive-layout-wide #block-views-imag-nes-cabecera-block,
+body.responsive-layout-wide #block-delta-blocks-site-name h1, 
+body.responsive-layout-wide #block-delta-blocks-site-name h2, 
+body.responsive-layout-wide #block-delta-blocks-site-name a,
+body.responsive-layout-wide #block-block-4  {
+ display:block;
+ visibility:visible;
+}
+/**DDBLOCK HOME**/
+
+body.responsive-layout-wide #region-header-first,
+body.responsive-layout-wide .ddblock-cycle-custom50p,
+body.responsive-layout-wide .ddblock-cycle-custom50p .custom-pager {
+ display:block;
+ visibility:visible;
+}
+/*Eliminando bloques Móviles*/
+body.responsive-layout-wide #block-views-cabeceramoviles-block,
+body.responsive-layout-wide #block-views-home-block-5,
+body.responsive-layout-wide #block-views-home-block-6,
+body.responsive-layout-wide #block-views-home-block-7,
+body.responsive-layout-wide #block-block-27,
+body.responsive-layout-wide #block-block-28,
+body.responsive-layout-wide #block-views-galeria-video-block-2 {
+ display:none;
+}
+
+/*Cabecera*/
+
+body.responsive-layout-wide  #region-user-first {
+ height:100px;
+}
+
+body.responsive-layout-wide #block-delta-blocks-site-name h1,
+body.responsive-layout-wide #block-delta-blocks-site-name h2,
+body.responsive-layout-wide #block-delta-blocks-site-name a {
+ font-family:'Helvetica';
+ color:white;
+ font-size:2.5em;
+ padding-right:0%;
+ margin-right:0px;
+ margin-top:2%;
+}
+
+
+/*Twitter Home*/
+
+body.front #block-views-tweets-block-1 {
+ display:block;
+ visibility:visible;
+}
+
+/*Menú*/
+body.responsive-layout-wide ul.nice-menu a, 
+body.responsive-layout-wide ul.nice-menu-down li, 
+body.responsive-layout-wide ul.nice-menu-down li.menuparent, 
+body.responsive-layout-wide ul.nice-menu-down li.menuparent:hover {
+ width:22%;
+ border:none;
+}
+
+
+body.responsive-layout-wide #zone-menu-wrapper,
+body.responsive-layout-wide #block-block-2, 
+body.responsive-layout-wide #block-block-4 {
+ border-top:0px;
+ border-bottom:0px;
+}
+
+
+/*Bloques Portada*/
+
+/*body.responsive-layout-wide #region-preface-first,
+body.responsive-layout-wide #region-preface-second, 
+body.responsive-layout-wide #region-preface-third {
+ width:31%;
+ margin-right:0.8em;
+}*/
+
+
+

@@ -1,0 +1,243 @@
+/* This file will hold styles that are loaded using the same media query as the normal grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+
+
+/*Recuperando bloques*/
+
+/*Recuperando bloques*/
+
+body.responsive-layout-normal #block-views-home-block-1,
+body.responsive-layout-normal #block-views-home-block-2,
+body.responsive-layout-normal #block-views-home-block-3,
+body.responsive-layout-normal #block-views-imag-nes-cabecera-block,
+body.responsive-layout-normal #block-delta-blocks-site-name h1, 
+body.responsive-layout-normal #block-delta-blocks-site-name h2, 
+body.responsive-layout-normal #block-delta-blocks-site-name a,
+body.responsive-layout-normal #block-block-4  {
+ display:block;
+ visibility:visible;
+}
+
+/**DDBLOCK HOME**/
+
+body.responsive-layout-normal #region-header-first,
+body.responsive-layout-normal .ddblock-cycle-custom50p,
+body.responsive-layout-normal .ddblock-cycle-custom50p .custom-pager {
+ display:block;
+ visibility:visible;
+}
+
+
+/*Eliminando bloques Móviles*/
+body.responsive-layout-normal #block-views-cabeceramoviles-block,
+body.responsive-layout-normal #block-views-home-block-5,
+body.responsive-layout-normal #block-views-home-block-6,
+body.responsive-layout-normal #block-views-home-block-7,
+body.responsive-layout-normal #block-block-27,
+body.responsive-layout-normal #block-block-28,
+body.responsive-layout-normal #block-views-galeria-video-block-2 {
+ display:none;
+}
+
+
+
+/*Header*/
+
+
+body.responsive-layout-normal  #region-user-first {
+ height:100px;
+}
+
+body.responsive-layout-normal #block-delta-blocks-site-name h1,
+body.responsive-layout-normal #block-delta-blocks-site-name h2,
+body.responsive-layout-normal #block-delta-blocks-site-name a {
+ font-family:'Helvetica';
+ color:white;
+ font-size:2.5em;
+ padding-right:0%;
+ margin-right:0px;
+ margin-top:6%;
+}
+
+
+
+/*Menú*/
+
+body.responsive-layout-normal ul.nice-menu a, 
+body.responsive-layout-normal ul.nice-menu-down li, 
+body.responsive-layout-normal ul.nice-menu-down li.menuparent, 
+body.responsive-layout-normal ul.nice-menu-down li.menuparent:hover {
+ width:22%;
+ border:none;
+}
+
+
+body.responsive-layout-normal #zone-menu-wrapper,
+body.responsive-layout-normal #block-block-2, 
+body.responsive-layout-normal #block-block-4  {
+ border-top:0px;
+ border-bottom:0px;
+}
+
+
+/*Bloques Portada*/
+
+body.responsive-layout-normal #region-preface-first,
+body.responsive-layout-normal #region-preface-second, 
+body.responsive-layout-normal #region-preface-third {
+ width:63%;
+ float:left;
+ clear:none;
+}
+
+body.responsive-layout-normal #region-preface-second, 
+body.responsive-layout-normal #region-preface-third {
+ margin-left:10px;
+}
+
+body.responsive-layout-normal #region-sidebar-second {
+ width:30%;
+ float:right;
+ clear:right;
+ margin-top:-31em;
+ margin-right:5%;
+}
+
+/*Twitter Home*/
+
+body.front #block-views-tweets-block-1 {
+ display:block;
+}
+
+
+body.responsive-layout-normal #cos {
+ min-height:10px;
+ max-height:auto;
+}
+
+
+body.responsive-layout-normal #block-views-home-block-1 .views-field, 
+body.responsive-layout-normal #block-views-home-block-2 .views-field, 
+body.responsive-layout-normal #block-views-home-block-3 .views-field {
+ min-height:10px;
+}
+
+
+/*Vista nodo completo Correcciones*/
+
+body.page-node- .ds-3col-stacked > .group-middle {
+  width: 24%;
+  float: left; /* LTR */
+  margin-right:10px;
+  margin-bottom:10px;
+  padding-top:0px;
+}
+
+body.page-node- .ds-3col-stacked > .group-right {
+  width: 24%;
+  float: left; /* LTR */
+  padding-left:0px;
+  padding-top:0px;
+}
+
+
+
+
+
+
+
+/*body.responsive-layout-narrow #region-user-first {
+ height:100%;
+ width:100%; 
+}
+
+body.responsive-layout-narrow #region-branding {
+ width:100%; 
+}
+
+
+body.responsive-layout-narrow #region-branding .branding-data {
+ width:78%;
+ padding-top:0px;
+ margin-left:12px;
+}
+
+body.responsive-layout-narrow #region-branding .site-name-slogan {
+ margin-top:0.3em;
+}
+
+body.responsive-layout-narrow #region-branding .branding-data h6 {
+ font-size:1.5em;
+ margin-left:0.1em;
+}
+
+body.responsive-layout-narrow #region-branding #subt {
+ font-size:1em;
+ padding-left:0px;
+ margin-left:0.1em;
+}
+
+body.responsive-layout-narrow #block-block-1 {
+ padding-top:1em;
+ width:17%;
+}
+
+
+body.responsive-layout-narrow #block-delta-blocks-site-name h1, 
+body.responsive-layout-narrow #block-delta-blocks-site-name h2, 
+body.responsive-layout-narrow #block-delta-blocks-site-name a {
+ font-size:2em;
+ float:left;
+ margin-left:5px;
+}
+
+
+body.responsive-layout-narrow #region-branding {
+ min-height:60px;
+}
+
+
+body.responsive-layout-narrow #tw,
+body.responsive-layout-narrow #fb {
+ float:right;
+}
+
+
+/Menú/
+
+body.responsive-layout-normal ul.nice-menu a, 
+body.responsive-layout-normal ul.nice-menu-down li, 
+body.responsive-layout-normal ul.nice-menu-down li.menuparent, 
+body.responsive-layout-normal ul.nice-menu-down li.menuparent:hover {
+ width:23%;
+}
+
+/Bloques Home/
+
+body.responsive-layout-narrow #region-preface-first, 
+body.responsive-layout-narrow #region-preface-second, 
+body.responsive-layout-narrow #region-preface-third {
+ width:100%;
+}
+
+body.responsive-layout-narrow body.front #block-views-tweets-block-1 {
+ display:none;
+}
+
+#block-views-home-block-1,
+#block-views-home-block-2,
+#block-views-home-block-3 {
+ height:25px;
+ display:block;
+ visibility:visible;
+}
+
+body.responsive-layout-narrow #region-sidebar-second {
+ width:25%;
+}
+*/
+
+
+
+

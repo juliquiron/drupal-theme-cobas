@@ -1,0 +1,744 @@
+/* This file will hold styles that are loaded using the same media query as the normal grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+
+
+/*Indice
+
+Elementos comunes
+Recuperando bloques
+Ocultando bloques
+Home
+ cabecera
+ menu principal
+ ddblock home
+ twitter home
+ pie
+ menu pie
+Views 4 elementos
+*/
+
+/*body.responsive-layout-normal .container-12 {
+    margin-left: auto;
+    margin-right: auto;
+    min-width:800px;
+}*/
+
+/*body.responsive-layout-wide  {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 800px;
+}*/
+
+
+
+/*Recuperando bloques*/
+
+body.responsive-layout-normal #block-views-home-block-1,
+body.responsive-layout-normal #block-views-home-block-2,
+body.responsive-layout-normal #block-views-home-block-3,
+body.responsive-layout-normal #block-views-imag-nes-cabecera-block,
+body.responsive-layout-normal #block-delta-blocks-site-name h1, 
+body.responsive-layout-normal #block-delta-blocks-site-name h2, 
+body.responsive-layout-normal #block-delta-blocks-site-name a,
+body.responsive-layout-normal #block-block-4,
+body.responsive-layout-normal #block-search-form,
+body.responsive-layout-normal .field.field-name-tweets.field-type-ds.field-label-hidden  {
+ display:block;
+ visibility:visible;
+}
+
+/**DDBLOCK HOME**/
+
+body.responsive-layout-normal #region-header-first,
+body.responsive-layout-normal .ddblock-cycle-custom50p,
+body.responsive-layout-normal .ddblock-cycle-custom50p .custom-pager {
+ display:block;
+ visibility:visible;
+}
+
+
+/*Eliminando bloques Móviles*/
+body.responsive-layout-normal #block-views-cabeceramoviles-block,
+body.responsive-layout-normal #block-views-home-block-5,
+body.responsive-layout-normal #block-views-home-block-6,
+body.responsive-layout-normal #block-views-home-block-7,
+body.responsive-layout-normal #block-block-27,
+body.responsive-layout-normal #block-block-28,
+body.responsive-layout-normal #block-views-galeria-video-block-2 {
+ display:none;
+}
+
+/*Home*/
+
+body.responsive-layout-normal.front #region-header-first {
+ margin-left:0px;
+
+}
+
+/*Header*/
+
+
+
+body.responsive-layout-normal  #region-user-first {
+ height:100px;
+}
+
+body.responsive-layout-normal #block-delta-blocks-site-name h1,
+body.responsive-layout-normal #block-delta-blocks-site-name h2,
+body.responsive-layout-normal #block-delta-blocks-site-name a {
+ font-family:'Helvetica';
+ color:white;
+ font-size:2.5em;
+ padding-right:0%;
+ margin-right:0px;
+ margin-top:6%;
+}
+
+body.responsive-layout-normal #subt {
+ margin-left:0px;
+ font-size:1.5em;
+}
+
+body.responsive-layout-normal #region-branding .branding-data h6 {
+ margin-left:0px;
+}
+
+/*Menú*/
+
+body.responsive-layout-normal #block-nice-menus-1 *, 
+body.responsive-layout-normal #block-nice-menus-2 * {
+ z-index:99999;
+}
+
+
+body.responsive-layout-normal ul.nice-menu a {
+ width:22%;
+ border:none;
+}
+body.responsive-layout-normal ul.nice-menu-down li {
+ width:100%;
+ border:none;
+}
+body.responsive-layout-normal ul.nice-menu-down li.menuparent,
+body.responsive-layout-normal #nice-menu-2 ul.nice-menu-down li.menuparent {
+ width:22%;
+ border:none;
+}
+body.responsive-layout-normal ul.nice-menu-down li.menuparent:hover,
+body.responsive-layout-normal #nice-menu-2 ul.nice-menu-down li.menuparent:hover  {
+ width:22%;
+ border:none;
+}
+
+
+body.responsive-layout-normal #zone-menu-wrapper,
+body.responsive-layout-normal #block-block-2, 
+body.responsive-layout-normal #block-block-4  {
+ border-top:0px;
+ border-bottom:0px;
+}
+
+body.responsive-layout-normal ul.nice-menu-down li a {
+ width:100%;
+ border:none;
+}
+
+body.responsive-layout-normal ul#nice-menu-1 li.menu-737 {
+ display:block;
+ visibility:visible;
+ width:5%;
+ float:right;
+ border-bottom:none;
+}
+
+body.html.responsive-layout-normal #block-nice-menus-1 li ul,
+body.html.responsive-layout-normal #block-nice-menus-2 li ul {
+ margin-left:0px;
+ padding-left:20px;
+ width:95%;
+ padding-right:5px;
+ padding-bottom:10px;
+}
+
+body.html.responsive-layout-normal #block-nice-menus-1 li ,
+body.html.responsive-layout-normal #block-nice-menus-2 li {
+ text-align:center;
+ padding-left:5px;
+}
+
+
+body.html.responsive-layout-normal #block-nice-menus-1 li ul li ul, 
+body.html.responsive-layout-normal #block-nice-menus-2 li ul li ul {
+ margin-left:0px;
+ padding-left:10px;
+}
+
+body.html.responsive-layout-normal #block-nice-menus-1 ul li ul li, 
+body.html.responsive-layout-normal #block-nice-menus-2 ul li ul li {
+ padding-bottom:5px;
+ padding-left:10px;
+ padding-top:5px;
+ padding-right:0px;
+}
+
+body.html.responsive-layout-normal #block-nice-menus-1 ul li.first ul {
+ margin-left:-10px;
+}
+
+body.html.responsive-layout-normal #block-nice-menus-1 li.first ,
+body.html.responsive-layout-normal #block-nice-menus-2 li.first {
+ text-align:left;
+ padding-left:15px;
+}
+
+body.html.responsive-layout-normal #block-nice-menus-1 ul li ul li.last, 
+body.html.responsive-layout-normal #block-nice-menus-2 ul li ul li.last {
+ padding-left:10px;
+ padding-bottom:10px;
+ padding-right:0px;
+}
+
+body.html.responsive-layout-normal #block-nice-menus-1 ul li ul li.first, 
+body.html.responsive-layout-normal #block-nice-menus-2 ul li ul li.first {
+ padding-left:20px;
+ padding-top:10px;
+}
+
+body.html.responsive-layout-normal #block-nice-menus-1 ul li.first ul, 
+body.html.responsive-layout-normal #block-nice-menus-2 ul li.first ul {
+ width:89%;
+}
+body.html.responsive-layout-normal #block-nice-menus-1 ul li ul li.first, 
+body.html.responsive-layout-normal #block-nice-menus-2 ul li ul li.first {
+ padding-left:10px;
+ padding-top:10px;
+}
+
+
+body.html.responsive-layout-normal #block-nice-menus-2 #nice-menu-2 ul li.menuparent {
+ width:20%;
+}
+
+/*Bloques Portada*/
+
+body.responsive-layout-normal #region-preface-first,
+body.responsive-layout-normal #region-preface-second, 
+body.responsive-layout-normal #region-preface-third {
+ width:63%;
+ float:left;
+ clear:none;
+}
+
+body.responsive-layout-normal #region-preface-second, 
+body.responsive-layout-normal #region-preface-third {
+ margin-left:10px;
+}
+
+body.responsive-layout-normal #region-sidebar-second {
+ width:30%;
+ float:right;
+ clear:right;
+ margin-top: -41%; /*30em;*/
+ margin-right:5%;
+}
+
+
+
+/*Twitter Home*/
+
+body.front #block-views-tweets-block-1 {
+ display:block;
+ width:113%;
+}
+
+
+body.responsive-layout-normal #block-views-home-block-1 .views-field, 
+body.responsive-layout-normal #block-views-home-block-2 .views-field, 
+body.responsive-layout-normal #block-views-home-block-3 .views-field {
+ min-height:10px;
+}
+
+
+/*Vista nodo completo Correcciones*/
+
+
+body.responsive-layout-normal #search-block-form .container-inline div {
+ margin-bottom:1.5em;
+}
+
+body.responsive-layout-normal #cos {
+ min-height:10px;
+ max-height:auto;
+}
+
+body.page-node- .ds-3col-stacked > .group-middle {
+  width: 24%;
+  float: left; /* LTR */
+  margin-right:10px;
+  margin-bottom:10px;
+  padding-top:0px;
+}
+
+body.page-node- .ds-3col-stacked > .group-right {
+  width: 24%;
+  float: left; /* LTR */
+  padding-left:0px;
+  padding-top:0px;
+}
+
+
+/*Vista nodo completo*/
+
+
+
+body.responsive-layout-nomal.page-node- .ds-3col-stacked.node.node-contenidos #headeral {
+ clear:right;
+}
+
+body.responsive-layout-normal.page-node- .ds-3col-stacked > .group-left {
+ width:46%;
+ margin-top:5px;
+ margin-right:5px;
+}
+
+body.responsive-layout-normal.page-node- .ds-3col-stacked > .group-middle {
+ margin-right:5px;
+}
+
+
+body.responsive-layout-normal.page-node- .ds-3col-stacked > .group-middle,
+body.responsive-layout-normal.page-node- .ds-3col-stacked > .group-right {
+ float:left;
+ clear:none;
+ margin-top:5px;
+ padding-top:0px;
+}
+body.responsive-layout-normal.page-node- .ds-3col-stacked > .group-right {
+ width:25%;
+}
+
+body.responsive-layout-normal.not-front .field-name-field-tipo-de-contenido a {
+ margin-left:-5px;
+}
+
+
+
+/*Franjas*/
+
+/*body.responsive-layout-normal.front #region-header-first {
+ width:99%;
+}
+
+body.responsive-layout-normal.not-front #zone-content {
+ margin-top:-24px;
+ padding-top:12px;
+ padding-bottom:10px;
+}*/
+
+
+body.html.responsive-layout-normal.not-front #zone-content {
+ margin-top:-24px;/*-12px;*/
+ padding-top:12px;/*0px;*/
+ width:98%;
+}
+
+body.html.responsive-layout-normal.node-type-actas #zone-content,
+/*body.html.responsive-layout-normal.responsive-layout-normal.page-documentacion #zone-content,*/
+body.html.responsive-layout-normal.node-type-video #zone-content ,
+body.html.responsive-layout-normal.node-type-galeria-imagenes #zone-content,
+body.html.responsive-layout-normal.node-type-contenidos #zone-content {
+ margin-top:-42px;
+ padding-top:18px;
+ padding-right:5px;
+}
+
+body.responsive-layout-normal.not-front #section-content {
+ background-color:#202020;
+ max-height:315px;
+ border-top:12px solid #FFFFFF;
+}
+
+
+
+/*Secciones*/
+
+
+body.html.responsive-layout-normal .ds-2col-stacked.node.node-pagina > .group-right,
+body.html.responsive-layout-normal .ds-2col-stacked.node.node-provincias > .group-right,
+body.html.responsive-layout-normal .ds-2col-stacked.node.node-plantilla-contratas > .group-right,
+body.html.responsive-layout-normal .ds-2col-stacked.node.node-plantilla-coorburgos > .group-right,
+body.html.responsive-layout-normal .ds-2col-stacked.node.node-plantilla-fedast > .group-right,
+body.html.responsive-layout-normal .ds-2col-stacked-fluid.node.node-plantilla-enlaces > .group-right,
+body.html.responsive-layout-normal .ds-2col-stacked.node.node-plantillan-telef > .group-right,
+body.html.responsive-layout-normal .ds-2col-stacked.node.node-plantillac > .group-right,
+body.html.responsive-layout-normal .ds-2col-stacked.node.node-opinion > .group-right,
+body.html.responsive-layout-normal .ds-2col-stacked.node.node-pformacion > .group-right,
+body.html.responsive-layout-normal .ds-2col-stacked.node.node-plantilla-enlacesint > .group-right,
+body.html #block-pubdlcnt-0 { 
+ float:left;
+ width:24%;
+}
+body.html.responsive-layout-normal #block-pubdlcnt-0 { 
+ float:right;
+ width:25%;
+}
+
+
+
+/****************PAGINAS INTERIORES****************************************/
+
+
+body.responsive-layout-normal div.group-header div.field .field-items .field-item h2 {
+ background-color: #363333;
+ display: inline;
+ line-height: 1.5em;
+ margin-left:0px; /*-15px;*/
+ margin-right: 20px;
+ margin-top: 20px;
+ padding-left: 40px;
+ padding-right: 5px;
+ white-space: pre-wrap;
+ padding-left: 0px;
+/* white-space:pre;*/
+ margin-right:0px;
+ padding-right:0px;
+}
+
+body.responsive-layout-normal.page-node- .field-name-title, body.page-node- .field-name-title {
+ margin-left:-12px;
+}
+
+/*Provincias*/
+
+body.html.responsive-layout-normal #block-views-enlaces-block-2 {
+ margin-top: 45px;
+}
+
+/*Seccion Normativa*/
+
+body.responsive-layout-normal.node-type-normativa #indice {
+ width:42%;
+ float:right;
+}
+
+body.responsive-layout-normal.node-type-normativa #normativa {
+ width:52%;
+ float:left;
+ clear:none;
+}
+
+/*Sección Documentación*/
+
+/*Tabla*/
+
+body.responsive-layout-normal td.views-field.views-field-field-etiqueta-territorio {
+ display:table-cell;
+ visibility:visible;
+}
+
+
+/*Multimedia*/
+
+
+body.responsive-layout-normal #block-views-galeria-video-block-1 .views-field-nothing {
+ width:25%;
+ float:right;
+ margin-right:10px;
+}
+
+
+
+/*Video nodo completo*/
+
+body.html.responsive-layout-normal.node-type-video #headerall .group-header {
+ width:100%;
+}
+
+body.html.responsive-layout-normal.node-type-video .group-header .field-name-post-date {
+ margin-top:0%;
+}
+
+body.html.responsive-layout-normal.node-type-video .ds-3col-stacked > .group-left {
+ width:72%;
+ margin-top:5px;
+}
+
+body.html.responsive-layout-normal.node-type-video .ds-3col-stacked > .group-right {
+ float:right;
+ background-color:#E5E5E5;
+}
+
+body.html.responsive-layout-normal.node-type-video .field-type-ds div#block-print-print-links {
+ width:72%;
+}
+
+
+body.html.responsive-layout-normal.node-type-video #block-views-bloque-destacado-block {
+ margin-left:0px;
+}
+
+body.responsive-layout-normal #block-views-galeria-de-fotos-block-1 .jcarousel-container-horizontal,
+#block-views-galeria-de-fotos-block-1 .jcarousel-clip-horizontal {
+ width:100%;
+ height:300px;
+}
+
+body.responsive-layout-normal.page-node-100 .pager-next,
+body.responsive-layout-normal.page-node-100 .item-list .pager li.pager-next.last {
+ width:6%;
+ margin-top:-11%;
+ margin-right:-10%
+}
+
+
+/*Revista*/
+
+body.responsive-layout-normal.node-type-normativa #issue, 
+body.responsive-layout-normal.node-type-normativa .issuuembed {
+ width:50%;
+}
+
+body.responsive-layout-normal.node-type-normativa #block-views-revista-block-2 #perdat {
+ width:44%;
+}
+body.responsive-layout-normal.node-type-normativa #perdat {
+ margin-left:12px;
+ width:48%;
+ float:right;
+}
+
+
+body.html.responsive-layout-normal.node-type-periodico-revista-cobas  .group-left {
+ width:50%;
+ float:left;
+ clear:none;
+}
+
+body.html.responsive-layout-normal.node-type-periodico-revista-cobas .group-right {
+ float:right;
+ width:50%;
+ clear:right;
+}
+body.html.responsive-layout-normal.node-type-periodico-revista-cobas .field-name-field-subtp  {
+ font-family:'Arial', serif;
+ font-size:21px;
+ font-weight:bold;
+}
+
+
+body.responsive-layout-normal.node-type-contenidos #block-views-bloque-destacado-block,
+body.html.not-front.responsive-layout-normal #block-views-tweets-block-1 {
+ margin-left:0px;
+}
+
+
+
+
+/*Multimedia*/
+
+body.html.responsive-layout-normal #block-views-galeria-video-block-1 .views-field-nothing span.more a,
+body.html.responsive-layout-normal #block-views-galeria-video-block-1 .views-field-nothing span.more * {
+ font-size:15px;
+}
+
+body.html.responsive-layout-normal #block-views-galeria-video-block-1 .views-field-nothing h1 a { 
+font-family:'Bebas',Arial,sans-serif;
+font-weight:25px;
+color:#202020;
+text-transform:uppercase;
+font-weight:normal;
+font-size:1em;
+}
+body.html.responsive-layout-normal #block-views-galeria-video-block-1 .field-content p {
+ font-size:15px;
+} 
+body.html.responsive-layout-normal #block-views-galeria-video-block-1 .views-field-field-video {
+ padding-top:10px;
+}
+
+body.html.responsive-layout-normal #block-views-galeria-video-block img {
+ border: solid 10px #202020;
+}
+body.html.responsive-layout-normal #block-views-galeria-video-block .titulov a {
+ padding-right:0px;
+}
+
+body.html.responsive-layout-normal #block-views-galeria-video-block .titulov {
+ margin-top:5px;
+ margin-left:15px;
+}
+
+body.html.responsive-layout-normal.node-type-paginab.html.page-node-100 #block-search-form {
+ margin-right:1%;
+}
+
+body.html.responsive-layout-normal.node-type-video #headerall .group-header .field-name-body {
+ margin-top:15px;
+ margin-left:15px;
+}
+body.html.responsive-layout-normal.node-type-video #headerall .group-header .field-name-body p,
+body.html.responsive-layout-normal.node-type-video #headerall .group-header .field-name-body br {
+ padding-bottom:5px;
+}
+
+
+
+/*body.responsive-layout-normal.page-documentacion #region-content h1#page-title*/
+
+/*body.responsive-layout-narrow #region-user-first {
+ height:100%;
+ width:100%; 
+}
+
+body.responsive-layout-narrow #region-branding {
+ width:100%; 
+}
+
+
+body.responsive-layout-narrow #region-branding .branding-data {
+ width:78%;
+ padding-top:0px;
+ margin-left:12px;
+}
+
+body.responsive-layout-narrow #region-branding .site-name-slogan {
+ margin-top:0.3em;
+}
+
+body.responsive-layout-narrow #region-branding .branding-data h6 {
+ font-size:1.5em;
+ margin-left:0.1em;
+}
+
+body.responsive-layout-narrow #region-branding #subt {
+ font-size:1em;
+ padding-left:0px;
+ margin-left:0.1em;
+}
+
+body.responsive-layout-narrow #block-block-1 {
+ padding-top:1em;
+ width:17%;
+}
+
+
+body.responsive-layout-narrow #block-delta-blocks-site-name h1, 
+body.responsive-layout-narrow #block-delta-blocks-site-name h2, 
+body.responsive-layout-narrow #block-delta-blocks-site-name a {
+ font-size:2em;
+ float:left;
+ margin-left:5px;
+}
+
+
+body.responsive-layout-narrow #region-branding {
+ min-height:60px;
+}
+
+
+body.responsive-layout-narrow #tw,
+body.responsive-layout-narrow #fb {
+ float:right;
+}
+
+
+/Menú/
+
+body.responsive-layout-normal ul.nice-menu a, 
+body.responsive-layout-normal ul.nice-menu-down li, 
+body.responsive-layout-normal ul.nice-menu-down li.menuparent, 
+body.responsive-layout-normal ul.nice-menu-down li.menuparent:hover {
+ width:23%;
+}
+
+/Bloques Home/
+
+body.responsive-layout-narrow #region-preface-first, 
+body.responsive-layout-narrow #region-preface-second, 
+body.responsive-layout-narrow #region-preface-third {
+ width:100%;
+}
+
+body.responsive-layout-narrow body.front #block-views-tweets-block-1 {
+ display:none;
+}
+
+#block-views-home-block-1,
+#block-views-home-block-2,
+#block-views-home-block-3 {
+ height:25px;
+ display:block;
+ visibility:visible;
+}
+
+body.responsive-layout-narrow #region-sidebar-second {
+ width:25%;
+}
+*/
+
+/*Bloque compartir y divulgar*/
+
+body.html .field-type-ds div#block-print-print-links {
+  background-color: #CC3333;
+  background-image: url("../images/compartir_divulgar.png");
+  background-repeat: no-repeat;
+  float: left;
+  height: 100px;
+  margin-bottom: -95px;
+  margin-left: 0;
+  margin-top: 30px;
+  width: 46%;
+}
+ 
+body.html .field-type-ds div#block-print-print-links span {
+  float:left;
+  margin-top: 45px;
+  display: block;
+  width: 50%;
+  margin-left: 14px;
+}
+
+body.html .field-type-ds div#block-print-print-links span.print_mail {
+  margin-top: 2.5%;
+  margin-left: 14px;
+  overflow: visible;
+}
+
+body.html.page-node- #socialwrapper {
+   background-color: #CC3333;
+   float: left;
+   height: 90px;
+   margin-left: 0;
+   margin-top: 30px;
+   width: 100%;
+}
+ 
+body.html #twitterwrapper {
+   float: left;
+   margin-left: 220px;
+   margin-top: 12px;
+}
+
+body.html #twcompartirwrapper {
+   background-repeat: no-repeat;
+   float: left;
+   margin-left: 6px;
+   margin-top: 12px;
+   position:relative;
+}
+ 
+body.html #facebookwrapper {
+   float: left;
+   margin-top: 47px;
+   position: absolute;
+   margin-left:220px;
+}
+body.html #fbcompartirwrapper {
+   background-repeat: no-repeat;
+   float: left;
+   margin-left: 250px;
+   margin-top: 47px;
+   position: absolute;
+}
+

@@ -1,0 +1,726 @@
+/* This file will hold styles that are loaded using the same media query as the wide grid. */
+
+
+/*Indice
+
+Elementos comunes
+Recuperando bloques
+Ocultando bloques
+Home
+ cabecera
+ menu principal
+ ddblock home
+ twitter home
+ pie
+ menu pie
+Views 4 elementos
+*/
+
+
+
+body.responsive-layout-wide .container-12 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+
+/*Recuperando bloques*/
+
+body.responsive-layout-wide #block-views-home-block-1,
+body.responsive-layout-wide #block-views-home-block-2,
+body.responsive-layout-wide #block-views-home-block-3,
+body.responsive-layout-wide #block-views-imag-nes-cabecera-block,
+body.responsive-layout-wide #block-delta-blocks-site-name h1, 
+body.responsive-layout-wide #block-delta-blocks-site-name h2, 
+body.responsive-layout-wide #block-delta-blocks-site-name a,
+body.responsive-layout-wide #block-block-4,
+body.responsive-layout-wide #region-header-first,
+body.responsive-layout-wide .ddblock-cycle-custom50p,
+body.responsive-layout-wide .ddblock-cycle-custom50p .custom-pager,
+body.front #block-views-tweets-block-1,
+body.responsive-layout-wide #block-search-form,
+body.responsive-layout-wide .field.field-name-tweets.field-type-ds.field-label-hidden  {
+ display:block;
+ visibility:visible;
+}
+/*Eliminando bloques Móviles*/
+body.responsive-layout-wide #block-views-cabeceramoviles-block,
+body.responsive-layout-wide #block-views-home-block-5,
+body.responsive-layout-wide #block-views-home-block-6,
+body.responsive-layout-wide #block-views-home-block-7,
+body.responsive-layout-wide #block-block-27,
+body.responsive-layout-wide #block-block-28,
+body.responsive-layout-wide #block-views-galeria-video-block-2 {
+ display:none;
+}
+
+
+/**********HOME***********/
+
+
+/*Cabecera*/
+
+body.responsive-layout-wide  #region-user-first {
+ height:100px;
+}
+
+body.responsive-layout-wide #block-delta-blocks-site-name h1,
+body.responsive-layout-wide #block-delta-blocks-site-name h2,
+body.responsive-layout-wide #block-delta-blocks-site-name a {
+ font-family:'Helvetica';
+ color:white;
+ font-size:2.5em;
+ padding-right:0%;
+ margin-right:0px;
+ padding-top:1%;
+}
+
+body.responsive-layout-wide #subt {
+ font-size:2em;
+ margin-left:0px;
+}
+
+body.responsive-layout-wide #region-branding .branding-data h6 {
+ margin-left:0px;
+}
+
+body.html.responsive-layout-wide.front #region-header-first {
+ margin-top:-45px;
+ border-top: solid 45px #E5E5E5;
+ margin-left:0px;
+ width:100%;
+ z-index:0;
+ padding-right:1px;
+}
+
+
+
+/*Menú*/
+
+body.responsive-layout-wide #block-nice-menus-1 *, 
+body.responsive-layout-wide #block-nice-menus-2 * {
+ z-index:99999;
+}
+
+body.responsive-layout-wide ul.nice-menu  {
+ width:22%;
+ border:none;
+} 
+body.responsive-layout-wide ul.nice-menu-down li {
+ width:100%;
+ border:none;
+}
+
+body.responsive-layout-wide ul.nice-menu-down li.menuparent{
+ width:23%;
+ border:none;
+} 
+body.responsive-layout-wide ul.nice-menu-down li.menuparent:hover {
+ width:23%;
+ border:none;
+}
+
+body.responsive-layout-wide ul.nice-menu-down .menuparent a {
+ border:none;
+}
+
+body.responsive-layout-wide.html ul.nice-menu a, 
+body.responsive-layout-wide.html ul.nice-menu-down li, 
+body.responsive-layout-wide.html ul.nice-menu-down li.menuparent, 
+body.responsive-layout-wide.html ul.nice-menu-down li.menuparent:hover {
+ width:22%;
+}
+
+
+
+body.html.responsive-layout-wide #block-nice-menus-1 li ul,
+body.html.responsive-layout-wide #block-nice-menus-2 li ul {
+ margin-left:-10px;
+ padding-left:30px;
+ width:95%;
+ padding-right:0px;
+ padding-bottom:10px;
+}
+
+body.html.responsive-layout-wide #block-nice-menus-1 li ul {
+ width:100%;
+}
+
+body.responsive-layout-wide.html #block-nice-menus-1  ul.nice-menu a, ul.nice-menu-down li, 
+body.responsive-layout-wide.html #block-nice-menus-1  ul.nice-menu-down li.menuparent, 
+body.responsive-layout-wide.html #block-nice-menus-1  ul.nice-menu-down li.menuparent:hover {
+ margin-left:0px;
+}
+
+body.html.responsive-layout-wide #block-nice-menus-1 li ul,
+body.html.responsive-layout-wide #block-nice-menus-2 li ul {
+ padding-left:0px;
+}
+
+
+body.html.responsive-layout-wide #block-nice-menus-1 li {
+ text-align:left;
+ padding-left:5px;
+}
+
+body.html.responsive-layout-wide #block-nice-menus-2 li {
+ text-align:left;
+}
+
+body.html.responsive-layout-wide #block-nice-menus-1 li ul li ul, 
+body.html.responsive-layout-wide #block-nice-menus-2 li ul li ul {
+ margin-left:0px;
+ padding-left:10px;
+}
+
+body.html.responsive-layout-wide #block-nice-menus-1 ul li ul li, 
+body.html.responsive-layout-wide #block-nice-menus-2 ul li ul li {
+ padding-bottom:5px;
+ padding-left:20px;
+ padding-top:5px;
+}
+
+
+body.html.responsive-layout-wide #block-nice-menus-1 li.first {
+ text-align:left;
+ padding-left:15px;
+}
+
+body.html.responsive-layout-wide #block-nice-menus-1 ul li ul li.last, 
+body.html.responsive-layout-wide #block-nice-menus-2 ul li ul li.last {
+ padding-left:20px;
+ padding-bottom:10px;
+ margin-right:0px;
+ padding-right:0px;
+}
+
+body.html.responsive-layout-wide #block-nice-menus-1 ul li ul li.first {
+ padding-left:20px;
+ padding-top:20px;
+}
+
+body.responsive-layout-wide #zone-menu-wrapper,
+body.responsive-layout-wide #block-block-2, 
+body.responsive-layout-wide #block-block-4 {
+ border-top:0px;
+ border-bottom:0px;
+}
+
+body.responsive-layout-wide.not-front ul#nice-menu-1 li.menu-737 {
+ width:5%;
+ margin-right:-10px;
+}
+
+body.responsive-layout-wide ul#nice-menu-1 li.menu-737  {
+ display:block;
+ visibility:visible;
+ width:5%;
+ float:right;
+ border-bottom:none;
+}
+
+body.html.responsive-layout-wide #block-nice-menus-2 ul li ul {
+ width:100%;
+}
+
+body.html.responsive-layout-wide #block-nice-menus-1 ul li ul li {
+ width:auto;
+}
+
+body.html.responsive-layout-wide #block-nice-menus-1 .nolink, #block-nice-menus-2 .nolink {
+ margin-left:5px;
+ padding-left:10px;
+}
+ 
+/*DDBLOCK*/
+
+body.responsive-layout-wide.html.front div.ddblock-cycle-custom50p div.slider-inner {
+ width:98%;
+ padding-right:5px;
+}
+
+body.responsive-layout-wide.html.front div.ddblock-cycle-custom50p .tcont {
+ width:98%;
+ padding-right:14px;
+}
+
+
+/*Bloques Portada*/
+
+body.responsive-layout-wide.front #zone-preface {
+ padding-right:1px;
+}
+
+body.responsive-layout-wide.front #region-preface-first,
+body.responsive-layout-wide.front #region-preface-second, 
+body.responsive-layout-wide.front #region-preface-third {
+ width:24%;
+/* margin-right:0.2em;*/
+ margin-right:0px;
+}
+
+body.responsive-layout-wide.front #cos {
+/* background-color:#FFFFFF;*/
+}
+body.responsive-layout-wide.front #block-views-home-block-1,
+body.responsive-layout-wide.front #block-views-home-block-2,
+body.responsive-layout-wide.front #block-views-home-block-3 {
+ background-color:#FFFFFF;
+ min-height:350px;
+ max-height:350px;
+}
+
+
+/******************Twitter HOME*/
+
+
+body.responsive-layout-wide #region-sidebar-second {
+ width:24%; 
+ float:right;
+}
+
+body.responsive-layout-wide.front #region-sidebar-second {
+ float:left;
+ margin-right:0px;
+ margin-left:0px;
+ padding-left:5px;
+}
+
+
+body.responsive-layout-wide.front #block-views-tweets-block-1 .view-id-tweets td.views-field img, 
+body.responsive-layout-wide.front #block-views-tweets-block .view-id-tweets td.views-field img,
+body.responsive-layout-wide #block-views-tweets-block-1 .view-id-tweets td.views-field img, 
+body.responsive-layout-wide #block-views-tweets-block .view-id-tweets td.views-field img {
+ padding-top:5px;
+ padding-left:5px;
+ padding-right:5px;
+}
+
+
+/*Vista nodo completo*/
+
+body.html.responsive-layout-wide .field-slideshow-slide, 
+body.html.responsive-layout-wide .field-slideshow-slide a, 
+body.html.responsive-layout-wide .field-slideshow-slide img {
+ width:85%;
+}
+
+body.responsive-layout-wide div.group-header div.field .field-items .field-item h2 {
+ background-color: #363333;
+ display: inline;
+ line-height: 1.5em;
+ margin-left:0px; /*-15px;*/
+ margin-right: 20px;
+ margin-top: 20px;
+ padding-left: 40px;
+ padding-right: 5px;
+ white-space: pre-wrap;
+ padding-left: 0px;
+/* white-space:pre;*/
+ margin-right:0px;
+ padding-right:0px;
+}
+
+body.responsive-layout-wide.page-node- .field-name-title, body.page-node- .field-name-title {
+ margin-left:-12px;
+}
+
+
+body.responsive-layout-wide.page-node- #headerall .field-slideshow-wrapper * {
+/* margin-right:-5px;
+ padding-right:15px;*/
+ float:right;
+/*width:60%;*/
+}
+
+body.responsive-layout-wide.page-node- #headerall .field-slideshow-wrapper img {
+ /*max-width:72%;*/
+}
+
+body.responsive-layout-wide.html.page-node- .ds-3col-stacked.node.node-contenidos #headerall > .group-footer .field-name-field-image .field-slideshow {
+/* width:61%;*/
+ padding-right:0px;
+}
+
+body.responsive-layout-wide.page-node- #headerall .field-slideshow-wrapper .field-slideshow * {
+ padding-right:-245px;
+}
+
+body.responsive-layout-wide.page-node- .ds-3col-stacked.node.node-contenidos #headeral {
+ clear:right;
+}
+
+body.responsive-layout-wide.page-node- .ds-3col-stacked > .group-left {
+ width:48%;
+ margin-top:5px;
+ margin-right:0px;
+ border-right:5px;
+ margin-left:-7px;
+}
+
+body.responsive-layout-wide.page-node- .ds-3col-stacked > .group-middle,
+body.responsive-layout-wide.page-node- .ds-3col-stacked > .group-right {
+ float:left;
+ clear:none;
+ margin-top:5px;
+ padding-top:0px;
+}
+
+body.responsive-layout-wide.page-node- .ds-3col-stacked > .group-middle,
+body.responsive-layout-wide.page-node- .ds-3col-stacked > .group-right {
+ margin-left:5px;
+ margin-right:0px;
+}
+
+body.responsive-layout-wide.page-node- .ds-3col-stacked > .group-right {
+ border-left:none;
+ border-right:none;
+ margin-left:0px;
+}
+
+
+body.responsive-layout-wide.page-node- .ds-3col-stacked > .group-middle {
+ margin-left:0px;
+}
+
+body.responsive-layout-wide.page-node- .field-name-3twits {
+ margin-left:-15px;
+}
+
+body.responsive-layout-wide.page-node- #block-views-bloque-destacado-block {
+ margin-left:-5px;
+}
+
+body.responsive-layout-wide.node-type-pagina #block-views-bloque-destacado-block {
+ margin-left:10px;
+}
+
+
+/*Franjas*/
+
+
+body.responsive-layout-wide.not-front #section-content {
+ background-color:#202020;
+ max-height:315px;
+ border-top:12px solid #FFFFFF;
+}
+
+body.html.responsive-layout-wide.node-type-actas #zone-content,
+body.html.responsive-layout-wide.responsive-layout-normal.page-documentacion #zone-content,
+body.html.responsive-layout-wide.node-type-video #zone-content ,
+body.html.responsive-layout-wide.node-type-galeria-imagenes #zone-content,
+body.html.responsive-layout-wide.node-type-contenidos #zone-content {
+ margin-top:-42px;
+ padding-top:18px;
+}
+
+
+body.responsive-layout-wide.not-front.page-node- .zone-content-wrapper {
+/*  background-color: #202020;
+  border-top: 12px solid white;
+  max-height: 51px;*/
+}
+
+body.responsive-layout-wide.not-front.page-node- .zone-content-wrapper {
+ display:block;
+}
+
+
+/*Secciones*/
+
+body.responsive-layout-wide.node-type-plantilla-coorburgos #section-content,
+body.responsive-layout-wide.node-type-plantilla-fedast #section-content,
+body.responsive-layout-wide.node-type-plantilla-contratas #section-content,
+body.responsive-layout-wide.node-type-provincias #section-content,
+body.responsive-layout-wide.node-type-pagina #section-content,
+body.responsive-layout-wide.node-type-paginab #section-content,
+body.responsive-layout-wide.node-type-normativa #section-content,
+body.responsive-layout-wide.node-type-multimediap #section-content,
+body.responsive-layout-wide.page-convenios-colectivos  #section-content,
+body.responsive-layout-wide.page-multimedia  #section-content,
+body.responsive-layout-wide.node-type-plantillan-telef #section-content,
+body.responsive-layout-wide.node-type-plantillac #section-content,
+body.responsive-layout-wide.node-type-opinion #section-content,
+body.responsive-layout-wide.node-type-plantilla-enlaces #section-content,
+body.responsive-layout-wide.page-documentacion #section-content,
+body.responsive-layout-wide.node-type-periodico-revista-cobas #section-content {
+ background-color:#202020;
+ max-height:51px;
+ border-top:12px solid #FFFFFF;
+
+}
+
+body.responsive-layout-wide.page-node-type-periodico-revista-cobas .field-name-title {
+}
+
+
+
+
+
+
+/****************PAGINAS INTERIORES****************************************/
+
+/*Provincias*/
+
+body.responsive-layout-wide #block-views-enlaces-block-2 {
+ margin-top:45px;
+}
+
+/*Seccion Normativa*/
+
+body.responsive-layout-wide.node-type-normativa #indice {
+ width:42%;
+ float:right;
+}
+
+body.responsive-layout-wide.node-type-normativa #normativa {
+ width:53%;
+ float:left;
+ clear:none;
+}
+
+
+/*Sección Documentación*/
+
+/*Tabla*/
+
+body.responsive-layout-wide td.views-field.views-field-field-etiqueta-territorio {
+ display:table-cell;
+ visibility:visible;
+}
+
+/*body.responsive-layout-wide.page-documentacion #region-content h1#page-title {
+ margin-top:12px;
+}*/
+
+
+
+
+/*Revista*/
+
+body.responsive-layout-wide.node-type-normativa #issue, 
+body.responsive-layout-normal.node-type-normativa .issuuembed {
+ width:50%;
+ float:left;
+}
+
+body.responsive-layout-wide.node-type-normativa #block-views-revista-block-2 #perdat {
+ width:44%;
+}
+
+body.responsive-layout-wide.node-type-normativa #perdat {
+ margin-left:12px;
+ width:48%;
+ float:right;
+}
+
+body.html.responsive-layout-wide.node-type-periodico-revista-cobas .group-left {
+ width:50%;
+ float:left;
+ clear:none;
+}
+
+body.html.responsive-layout-wide.node-type-periodico-revista-cobas .group-right {
+ float:right;
+ width:50%;
+ clear:right;
+}
+
+body.html.responsive-layout-wide.node-type-periodico-revista-cobas .field-name-field-subtp  {
+ font-family:'Arial', serif;
+ font-weight:bold;
+ font-size:21px;
+}
+
+/*Multimedia*/
+body.responsive-layout-wide #block-views-galeria-de-fotos-block-1 .jcarousel-container-horizontal,
+#block-views-galeria-de-fotos-block-1 .jcarousel-clip-horizontal {
+ width:800px;
+ height:300px;
+}
+body.responsive-layout-wide.page-node-100 .pager-next,
+body.responsive-layout-wide.page-node-100 .item-list .pager li.pager-next.last {
+ width:5%;
+ margin-top:-11%;
+}
+
+body.html.responsive-layout-wide #block-views-galeria-video-block-1 .views-field-nothing span.more a,
+body.html.responsive-layout-wide #block-views-galeria-video-block-1 .views-field-nothing span.more * {
+ font-size:15px;
+}
+
+body.html.responsive-layout-wide #block-views-galeria-video-block-1 .views-field-nothing h1 a { 
+font-family:'Bebas',Arial,sans-serif;
+font-weight:25px;
+color:#202020;
+text-transform:uppercase;
+font-weight:normal;
+font-size:1em;
+}
+body.html.responsive-layout-wide #block-views-galeria-video-block-1 .field-content p {
+ font-size:17px;
+} 
+body.html.responsive-layout-wide #block-views-galeria-video-block-1 .views-field-field-video {
+ padding-top:10px;
+}
+
+body.html.responsive-layout-wide #block-views-galeria-video-block img {
+ border: solid 10px #202020;
+}
+body.html.responsive-layout-wide #block-views-galeria-video-block .titulov a {
+ padding-right:5px;
+}
+
+body.html.responsive-layout-wide #block-views-galeria-video-block .titulov {
+ margin-top:5px;
+}
+
+
+body.html.responsive-layout-wide.node-type-paginab.html.page-node-100 #block-search-form {
+ margin-right:66px;
+}
+
+
+body.html.responsive-layout-wide .group-right #block-search-form input[type="text"] {
+ width:73%;
+ margin-right:1%;
+ float:left;
+}
+
+/*Video nodo completo*/
+
+body.html.responsive-layout-wide.node-type-video #headerall .group-header {
+ width:100%;
+}
+
+body.html.responsive-layout-wide.node-type-video #headerall .group-header .field-name-body {
+ margin-top:15px;
+ margin-left:15px;
+}
+body.html.responsive-layout-wide.node-type-video #headerall .group-header .field-name-body p,
+body.html.responsive-layout-wide.node-type-video #headerall .group-header .field-name-body br {
+ padding-bottom:5px;
+}
+
+body.html.responsive-layout-wide.node-type-video .group-header .field-name-post-date {
+ margin-top:0%;
+}
+
+body.html.responsive-layout-wide.node-type-video .ds-3col-stacked > .group-left {
+ width:72%;
+}
+
+body.html.responsive-layout-wide.node-type-video .ds-3col-stacked > .group-right {
+ float:right;
+ background-color:#E5E5E5;
+}
+
+body.html.responsive-layout-wide.node-type-video .field-type-ds div#block-print-print-links {
+ width:72%;
+}
+
+
+body.html.responsive-layout-wide.node-type-video #block-views-bloque-destacado-block {
+ margin-left:0px;
+}
+
+body.html.responsive-layout-wide.node-type-galeria-imagenes #headerall .group-header {
+ width:42%;
+}
+
+body.html.responsive-layout-wide.node-type-galeria-imagenes #block-block-24 {
+ margin-left:-5px;
+ margin-right:-1px;
+}
+
+body.responsive-layout-wide.node-type-contenidos #block-views-contenidos-relacionados-block, #block-views-bloque-destacado-block {
+ margin-left:-5px;
+}
+
+
+/*Bloque subs*/
+body.responsive-layout-wide.node-type-contenidos .field-name-bloquesubsboletin {
+ margin-left:-5px;
+}
+
+/*Compartir y divulgar*/
+
+body.html.responsive-layout-wide.node-type-contenidos .field-type-ds div#block-print-print-links,
+body.html.responsive-layout-wide.node-type-actas .field-type-ds div#block-print-print-links { 
+ width:48%;
+}
+ 
+/*Menu user*/
+
+body.logged-in.responsive-layout-wide #block-nice-menus-2 {
+ border-top:none;
+}
+
+body.logged-in.responsive-layout-wide #block-nice-menus-2 ul#nice-menu-2 li.menuparent *{
+ width:92%;
+ margin-left:0px;
+ margin-bottom:2px;
+ padding-right:6%;
+ margin-right:0px;
+}
+
+/*body.responsive-layout-wide.not-front #block-nice-menus-2 ul.nice-menu a, */
+body.responsive-layout-wide.not-front #block-nice-menus-2 ul.nice-menu-down li 
+/*body.responsive-layout-wide.not-front #block-nice-menus-2 ul.nice-menu-down li.menuparent, */
+/*body.responsive-layout-wide.not-front #block-nice-menus-2 ul.nice-menu-down li.menuparent:hover */{
+ width:23%;
+}
+
+body.html.responsive-layout-wide #block-nice-menus-2 ul li.menuparent ul a {
+ margin-bottom:-2px;
+ padding-bottom:0px;
+}
+body.html.responsive-layout-wide #block-nice-menus-2 ul  {
+ padding-top:2px;
+}
+
+
+
+
+/*body.responsive-layout-wide.not-front #block.nice-menus*/
+
+/*Compartir y divulgar*/
+
+
+body.html .field-type-ds div#block-print-print-links {
+  height: 150px;
+}
+
+body.html .field-type-ds div#block-print-print-links span {
+  margin-top: 60px;
+}
+
+body.html #twitterwrapper {
+    float: left;
+    margin-left: 250px;
+    margin-top: 30px;
+}
+ 
+body.html #twcompartirwrapper {
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 6px;
+    margin-top: 30px;
+    position:relative;
+}
+ 
+body.html #facebookwrapper {
+    float: left;
+    margin-top: 67px;
+    position: absolute;
+    margin-left:250px;
+}
+body.html #fbcompartirwrapper {
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 280px;
+    margin-top: 69px;
+    position: absolute;
+}
+
